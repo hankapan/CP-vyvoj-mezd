@@ -1,0 +1,603 @@
+<title>Vývoj mezd zaměstnanců</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600&display=swap">
+<style>
+/* Layout: personal ledger. Summary strip, toolbar, then one wide table (two views) with expandable per-person history. */
+:root {
+  --bg: #f6f7f8;
+  --surface: #ffffff;
+  --fg: #17212b;
+  --muted: #5b6875;
+  --line: #dde2e7;
+  --line-strong: #c3ccd5;
+  --accent: #1d5f7c;
+  --accent-soft: #e3eef3;
+  --raise: #e6f2ea;
+  --raise-fg: #1f6b3d;
+  --cut: #fbeaea;
+  --cut-fg: #9b2c2c;
+  --warn: #fdf3dc;
+  --warn-fg: #8a5a00;
+  --leave: #efeaf6;
+  --leave-fg: #5b4386;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-head: "IBM Plex Sans Condensed", "Arial Narrow", "IBM Plex Sans", sans-serif;
+  --font-num: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12171c; --surface: #192027; --fg: #e4e9ee; --muted: #93a1ae; --line: #29323b; --line-strong: #3a4551;
+    --accent: #79b6d3; --accent-soft: #1d3340; --raise: #183326; --raise-fg: #7fd0a0; --cut: #3a1f22; --cut-fg: #f0a3a3;
+    --warn: #3a2f17; --warn-fg: #f1c66d; --leave: #2a2338; --leave-fg: #c3b1e6; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12171c; --surface: #192027; --fg: #e4e9ee; --muted: #93a1ae; --line: #29323b; --line-strong: #3a4551;
+  --accent: #79b6d3; --accent-soft: #1d3340; --raise: #183326; --raise-fg: #7fd0a0; --cut: #3a1f22; --cut-fg: #f0a3a3;
+  --warn: #3a2f17; --warn-fg: #f1c66d; --leave: #2a2338; --leave-fg: #c3b1e6; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 14px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 48px;
+}
+.wrap { max-width: 1280px; margin: 0 auto; display: grid; gap: 20px; }
+header { display: grid; gap: 6px; }
+h1 { font-family: var(--font-head); font-weight: 600; font-size: 28px; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; max-width: 72ch; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 28px; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stat { display: grid; gap: 2px; }
+.stat b { font-family: var(--font-num); font-weight: 500; font-size: 20px; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 6px; overflow: hidden; }
+.seg button { font: inherit; background: var(--surface); color: var(--fg); border: 0; padding: 6px 12px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line-strong); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+input[type="search"], select { font: inherit; color: var(--fg); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 6px; padding: 6px 10px; }
+input[type="search"] { min-width: 0; width: 220px; max-width: 100%; }
+label.lbl { display: inline-flex; gap: 8px; align-items: center; color: var(--muted); }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 9px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+thead th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 500; white-space: nowrap; position: sticky; top: 0; background: var(--surface); }
+td.num, th.num { text-align: right; font-family: var(--font-num); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.name-btn { all: unset; cursor: pointer; font-weight: 600; display: inline-flex; gap: 8px; align-items: baseline; }
+.name-btn .car { color: var(--muted); font-size: 11px; width: 10px; display: inline-block; transition: transform .15s; }
+.name-btn[aria-expanded="true"] .car { transform: rotate(90deg); }
+.name-btn:hover .nm { color: var(--accent); text-decoration: underline; }
+.pos { color: var(--muted); font-size: 12.5px; }
+.small { color: var(--muted); font-size: 12px; }
+.chip { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; white-space: nowrap; font-family: var(--font-body); }
+.chip.leave { background: var(--leave); color: var(--leave-fg); }
+.chip.gone { background: var(--line); color: var(--muted); }
+.chip.warn { background: var(--warn); color: var(--warn-fg); }
+.chip.dpp { background: var(--accent-soft); color: var(--accent); }
+.up { color: var(--raise-fg); }
+.down { color: var(--cut-fg); }
+tr.ended > td { color: var(--muted); }
+tr.detail > td { background: var(--bg); padding: 16px 16px 20px; }
+.detail-grid { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr); gap: 20px; }
+@media (max-width: 820px) { .detail-grid { grid-template-columns: minmax(0, 1fr); } }
+.hist { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+.hist th, .hist td { padding: 7px 10px; font-size: 13px; }
+.hist tr.k-leave td, .hist tr.k-end td, .hist tr.k-info td { color: var(--muted); }
+.issues h3, .hist-h { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 500; margin: 0 0 8px; }
+.issues ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.issues li::marker { color: var(--warn-fg); }
+a.doc { color: var(--accent); text-decoration: none; }
+a.doc:hover { text-decoration: underline; }
+.note { color: var(--muted); font-size: 12px; margin-top: 2px; }
+svg.spark { display: block; }
+svg.spark rect { fill: var(--accent); opacity: .45; }
+svg.spark rect.cur { opacity: 1; }
+svg.spark rect.k-leave { fill: var(--leave-fg); opacity: .8; }
+svg.spark rect.k-dpp, svg.spark rect.k-unknown, svg.spark rect.k-end { fill: var(--muted); opacity: .6; }
+svg.spark line { stroke: var(--line-strong); stroke-width: 1; }
+.years td.cell { font-family: var(--font-num); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.years td.cell.chg { background: var(--raise); color: var(--raise-fg); }
+.years td.cell.chg.neg { background: var(--cut); color: var(--cut-fg); }
+.years td.cell.empty { color: var(--line-strong); }
+.years td.cell.today { border-left: 2px solid var(--line-strong); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; color: var(--muted); font-size: 12px; align-items: center; }
+.sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 6px; }
+footer { color: var(--muted); font-size: 12px; max-width: 90ch; display: grid; gap: 6px; }
+.empty-state { padding: 28px; color: var(--muted); text-align: center; }
+.seg .cnt { font-family: var(--font-num); font-size: 12px; opacity: .8; }
+.chip.st-drive { background: var(--accent-soft); color: var(--accent); }
+.chip.st-explained { background: var(--leave); color: var(--leave-fg); }
+.chip.st-done { background: var(--raise); color: var(--raise-fg); }
+.chk-intro { padding: 14px 16px; border-bottom: 1px solid var(--line); color: var(--muted); display: grid; gap: 6px; }
+.chk-intro p { margin: 0; max-width: 90ch; }
+.chk-intro b { color: var(--fg); font-weight: 600; }
+.chk-banner { padding: 10px 16px; background: var(--warn); color: var(--warn-fg); border-bottom: 1px solid var(--line); }
+.chk-person { padding: 14px 16px 6px; border-bottom: 1px solid var(--line); }
+.chk-person h3 { margin: 0 0 4px; font-size: 15px; font-weight: 600; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.chk-item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 10px 20px; padding: 10px 0; border-top: 1px dashed var(--line); }
+.chk-person h3 + .chk-item { border-top: 0; }
+@media (max-width: 820px) { .chk-item { grid-template-columns: minmax(0, 1fr); } }
+.chk-text { min-width: 0; }
+.chk-item.is-done .chk-text { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--line-strong); }
+.chk-ctl { display: grid; gap: 6px; min-width: 0; }
+.chk-st { display: flex; flex-wrap: wrap; gap: 6px; }
+.chk-st button { font: inherit; font-size: 12.5px; background: var(--surface); color: var(--fg); border: 1px solid var(--line-strong); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+.chk-st button[aria-pressed="true"][data-s="open"] { background: var(--line); border-color: var(--line); }
+.chk-st button[aria-pressed="true"][data-s="drive"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+.chk-st button[aria-pressed="true"][data-s="explained"] { background: var(--leave); color: var(--leave-fg); border-color: var(--leave-fg); }
+.chk-st button[aria-pressed="true"][data-s="done"] { background: var(--raise); color: var(--raise-fg); border-color: var(--raise-fg); }
+.chk-st button:disabled { cursor: default; opacity: .6; }
+.chk-ctl textarea { font: inherit; font-size: 13px; color: var(--fg); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 6px; padding: 6px 8px; min-height: 2.4em; resize: vertical; width: 100%; }
+.chk-ctl textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.chk-meta { font-size: 11.5px; color: var(--muted); min-height: 1em; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Vývoj mezd zaměstnanců</h1>
+    <p class="sub">Základní měsíční mzda podle pracovních smluv, dodatků a mzdových výměrů. Bez pohyblivé složky, prémií a bonusů. Kliknutím na jméno otevřete celou historii s odkazy na dokumenty.</p>
+  </header>
+
+  <section class="stats" id="stats" aria-label="Souhrn"></section>
+
+  <div class="toolbar">
+    <div class="seg" role="group" aria-label="Zobrazení">
+      <button type="button" id="v-list" aria-pressed="true">Přehled</button>
+      <button type="button" id="v-years" aria-pressed="false">Po letech</button>
+      <button type="button" id="v-check" aria-pressed="false">K ověření <span class="cnt" id="v-check-n"></span></button>
+    </div>
+    <input type="search" id="q" placeholder="Hledat jméno nebo pozici" aria-label="Hledat jméno nebo pozici">
+    <label class="lbl" for="cst" id="cst-wrap" hidden>Zobrazit
+      <select id="cst">
+        <option value="todo">K řešení</option>
+        <option value="mine">Čeká na Clauda</option>
+        <option value="done">Vyřešené</option>
+        <option value="all">Všechny body</option>
+      </select>
+    </label>
+    <label class="lbl" for="flt" id="flt-wrap">Zobrazit
+      <select id="flt">
+        <option value="all">Všichni</option>
+        <option value="active">V pracovním poměru</option>
+        <option value="leave">Na MD/RD</option>
+        <option value="ended">Ukončení</option>
+        <option value="issues">S nesrovnalostmi</option>
+      </select>
+    </label>
+    <label class="lbl" for="srt" id="srt-wrap">Řadit
+      <select id="srt">
+        <option value="name">Podle jména</option>
+        <option value="start">Podle nástupu</option>
+        <option value="salary">Podle aktuální mzdy</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="card scroll" id="view"></div>
+
+  <div class="legend" id="legend"></div>
+
+  <footer>
+    <div>Zdroj: personální složky zaměstnanců na Google Drive a sdílená složka dodatků 2025. Stav k <span id="asof"></span>. Hodnoty ze skenovaných PDF jsou přečtené strojově; u položek označených v poznámce je vhodné ověřit originál.</div>
+    <div>„Úvazek“ je týdenní pracovní doba v hodinách. Přepočet na plný úvazek (40 h) je uveden u kratších úvazků pro srovnání.</div>
+  </footer>
+</div>
+
+<script>
+const DATA = /*DATA*/[];
+const TODAY = "2026-11-20";
+const YEARS = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
+
+const nf = new Intl.NumberFormat("cs-CZ");
+const kc = v => nf.format(v) + " Kč";
+const pct = v => (v > 0 ? "+" : "") + nf.format(Math.round(v * 10) / 10) + " %";
+const dCZ = iso => { if (!iso) return ""; const [y, m, d] = iso.split("-"); return `${+d}. ${+m}. ${y}`; };
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const driveUrl = id => `https://drive.google.com/file/d/${encodeURIComponent(id)}/view`;
+
+function kindOf(e) {
+  if (e.kind) return e.kind;
+  if (e.salary != null) return "pay";
+  const t = (e.doc || "") + " " + (e.position || "") + " " + (e.note || "");
+  if (/DPP/.test(t)) return "dpp";
+  if (/Mateřsk|PPM/i.test(e.doc || "")) return "leave";
+  if (/Ukončení|rozvázání/i.test(e.doc || "")) return "end";
+  return "info";
+}
+
+const people = DATA.map(p => {
+  const evs = [...(Array.isArray(p.events) ? p.events : [p.events])].filter(Boolean).sort((a, b) => a.from.localeCompare(b.from));
+  let hours = null, pos = null, lastPay = null;
+  const rows = evs.map(e => {
+    const k = kindOf(e);
+    if (e.hours != null) hours = e.hours;
+    if (e.position) pos = e.position;
+    const row = { ...e, kind: k, hoursEff: (k === "pay" || k === "dpp") ? hours : null, posEff: pos, prev: lastPay };
+    if (k === "pay") lastPay = e.salary;
+    return row;
+  });
+  const issues = (Array.isArray(p.issues) ? p.issues : (p.issues ? [p.issues] : []));
+  return { ...p, rows, issues, pos };
+});
+
+// State of one person on a given date
+function at(p, iso) {
+  if (iso < p.start && !p.rows.some(r => r.from <= iso)) return { t: "before" };
+  if (p.end && iso > p.end) return { t: "gone" };
+  let st = null, pay = null, hours = null;
+  for (const r of p.rows) {
+    if (r.from > iso) break;
+    if (r.kind === "end" && r.from === p.end) continue;
+    if (r.kind === "pay") { pay = r.salary; hours = r.hoursEff; st = "pay"; }
+    else if (r.kind === "info") { if (!r.added || st === null) st = pay != null ? "pay" : "unknown"; }
+    else st = r.kind;
+  }
+  if (!st) return { t: "before" };
+  if (st === "pay") return { t: "pay", v: pay, h: hours };
+  return { t: st };
+}
+
+function current(p) {
+  const ended = p.end && p.end < TODAY;
+  const s = at(p, ended ? p.end : TODAY);
+  const pays = p.rows.filter(r => r.kind === "pay");
+  const last = pays[pays.length - 1];
+  const first = pays[0];
+  const lastChange = [...p.rows].reverse().find(r => r.kind === "pay" && r.prev !== r.salary);
+  return { ended, s, last, first, lastChange };
+}
+people.forEach(p => p.cur = current(p));
+
+function chip(t) {
+  return {
+    leave: '<span class="chip leave">MD/RD</span>',
+    gone: '<span class="chip gone">ukončeno</span>',
+    dpp: '<span class="chip dpp">DPP</span>',
+    unknown: '<span class="chip warn">neznámá</span>',
+    end: '<span class="chip gone">mimo PP</span>'
+  }[t] || "";
+}
+
+// Column mini-chart: one bar per calendar year, salary valid at year end (or today / end of employment)
+function spark(p) {
+  const W = 132, H = 30, base = H - 1;
+  const lastIso = p.cur.ended ? p.end : TODAY;
+  const y0 = +(p.rows[0]?.from || p.start).slice(0, 4), y1 = +lastIso.slice(0, 4);
+  const pays = p.rows.filter(r => r.kind === "pay");
+  if (!pays.length || y1 < y0) return "";
+  const years = [];
+  for (let y = y0; y <= y1; y++) {
+    const iso = y === y1 ? lastIso : `${y}-12-31`;
+    years.push({ y, s: at(p, iso) });
+  }
+  const max = Math.max(...pays.map(r => r.salary));
+  const n = years.length, gap = n > 12 ? 1 : 2;
+  const bw = Math.min(14, (W - gap * (n - 1)) / n);
+  const x0 = W - (bw * n + gap * (n - 1));
+  const bars = years.map(({ y, s }, i) => {
+    const x = (x0 + i * (bw + gap)).toFixed(1);
+    if (s.t === "pay") {
+      const h = Math.max(2, (H - 2) * s.v / max);
+      return `<rect class="${i === n - 1 ? "cur" : ""}" x="${x}" y="${(base - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}"><title>${y}: ${kc(s.v)}</title></rect>`;
+    }
+    const lbl = { leave: "MD/RD", dpp: "DPP", unknown: "mzda neznámá", gone: "ukončeno", end: "mimo PP" }[s.t];
+    if (!lbl) return "";
+    return `<rect class="k-${s.t}" x="${x}" y="${base - 3}" width="${bw.toFixed(1)}" height="3"><title>${y}: ${lbl}</title></rect>`;
+  }).join("");
+  return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Vývoj mzdy po letech ${y0}–${y1}">
+    <line x1="0" y1="${base + 0.5}" x2="${W}" y2="${base + 0.5}"></line>${bars}</svg>`;
+}
+
+function hoursTxt(h) { return h == null ? "" : nf.format(h) + " h"; }
+
+function detail(p) {
+  const rows = p.rows.map(r => {
+    let sal = "", chg = "";
+    if (r.kind === "pay") {
+      sal = kc(r.salary);
+      if (r.prev != null && r.prev !== r.salary) {
+        const diff = r.salary - r.prev, pc = diff / r.prev * 100;
+        chg = `<span class="${diff > 0 ? "up" : "down"}">${diff > 0 ? "+" : "−"}${nf.format(Math.abs(diff))} Kč<br><span class="small">${pct(pc)}</span></span>`;
+      } else if (r.prev != null) chg = '<span class="small">beze změny</span>';
+    } else sal = chip(r.kind === "info" ? "" : r.kind) || '<span class="small">—</span>';
+    const doc = r.fileId ? `<a class="doc" href="${driveUrl(r.fileId)}" target="_blank" rel="noopener">${esc(r.doc)}</a>` : esc(r.doc);
+    return `<tr class="k-${r.kind}">
+      <td class="num">${dCZ(r.from)}</td>
+      <td class="num">${sal}</td>
+      <td class="num">${chg}</td>
+      <td class="num">${hoursTxt(r.hoursEff)}</td>
+      <td>${esc(r.position || "")}</td>
+      <td>${doc}${r.note ? `<div class="note">${esc(r.note)}</div>` : ""}</td>
+    </tr>`;
+  }).join("");
+  const iss = p.issues.length
+    ? `<div class="issues"><h3>K ověření a doplnění</h3><ul>${p.issues.map(i => { const c = checks[issueKey(p.name, i)]; const st = c && c.status && c.status !== "open" ? ` <span class="chip st-${c.status}">${esc(STATUS[c.status] || "")}</span>` : ""; return `<li>${esc(i)}${st}</li>`; }).join("")}</ul></div>`
+    : `<div class="issues"><h3>K ověření a doplnění</h3><p class="small" style="margin:0">Bez nesrovnalostí.</p></div>`;
+  return `<div class="detail-grid">
+    <div class="scroll"><div class="hist-h">Historie</div><table class="hist">
+      <thead><tr><th class="num">Platí od</th><th class="num">Mzda</th><th class="num">Změna</th><th class="num">Úvazek</th><th>Pozice</th><th>Dokument</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>
+    ${iss}
+  </div>`;
+}
+
+// ---- Checklist state (shared db: checks/<key> = {status, note, name, issue, updated}) ----
+const STATUS = { open: "Otevřené", drive: "Doplněno na Drive", explained: "Vysvětleno", done: "V pořádku / vyřešeno" };
+let checks = {};              // key -> doc data
+let dbRef = null;             // resolved db namespace, or null
+let dbState = "loading";      // loading | ready | slow | off | readonly
+const pending = {};           // key -> promise chain (one write at a time per doc)
+const noteTimers = {};
+const drafts = {};            // key -> unsaved textarea text
+function issueKey(name, text) {
+  let h = 5381; const s = name + "|" + text;
+  for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0;
+  return "i" + h.toString(36) + s.length.toString(36);
+}
+const statusOf = (name, text) => (checks[issueKey(name, text)] || {}).status || "open";
+const openCount = p => p.issues.filter(t => statusOf(p.name, t) === "open").length;
+function allIssues() {
+  const out = [];
+  people.forEach(p => p.issues.forEach(t => out.push({ p, t, k: issueKey(p.name, t) })));
+  return out;
+}
+function writeCheck(it, patch) {
+  if (!dbRef || dbState === "readonly") return;
+  const prev = checks[it.k] || { status: "open", note: "" };
+  const body = { status: prev.status || "open", note: prev.note || "", ...patch, name: it.p.name, issue: it.t, updated: new Date().toISOString() };
+  checks = { ...checks, [it.k]: body };
+  const run = () => dbRef.doc("checks/" + it.k).set(body).catch(e => {
+    if (e && (e.code === "invalid_argument" || e.code === "not_granted" || e.code === "revoked")) { dbState = "readonly"; render(); }
+    else if (e && e.code === "unavailable") return new Promise(r => setTimeout(r, 800 + Math.random() * 800)).then(() => dbRef.doc("checks/" + it.k).set(body)).catch(() => {});
+  });
+  pending[it.k] = (pending[it.k] || Promise.resolve()).then(run);
+}
+(async () => {
+  let to = setTimeout(() => { if (dbState === "loading") { dbState = "slow"; render(); } }, 10000);
+  try { dbRef = window.claude && claude.use ? await claude.use("db") : null; } catch (e) { dbRef = null; }
+  if (!dbRef) { clearTimeout(to); dbState = "off"; render(); renderStats(); return; }
+  dbRef.collection("checks").onSnapshot(snap => {
+    const next = {};
+    snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); });
+    checks = next;
+    if (!snap.metadata.fromCache) { clearTimeout(to); if (dbState !== "readonly") dbState = "ready"; }
+    renderStats(); softRender();
+  }, () => { clearTimeout(to); dbState = "off"; render(); });
+})();
+// Re-render without clobbering a textarea the user is typing in
+function softRender() {
+  const a = document.activeElement;
+  if (state.view === "check" && a && a.tagName === "TEXTAREA") { updateCheckCounts(); return; }
+  render();
+}
+
+let state = { view: "list", q: "", flt: "all", srt: "name", cst: "todo", open: new Set() };
+try { const s = JSON.parse(localStorage.getItem("mzdy-view") || "{}"); if (s.view) state.view = s.view; if (s.srt) state.srt = s.srt; } catch (e) {}
+function save() { try { localStorage.setItem("mzdy-view", JSON.stringify({ view: state.view, srt: state.srt })); } catch (e) {} }
+
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  let list = people.filter(p => {
+    if (q && !(p.name.toLowerCase().includes(q) || (p.pos || "").toLowerCase().includes(q))) return false;
+    if (state.flt === "active" && p.cur.ended) return false;
+    if (state.flt === "ended" && !p.cur.ended) return false;
+    if (state.flt === "leave" && (p.cur.ended || !(p.cur.s.t === "leave" || /mateřsk/i.test(p.status || "")))) return false;
+    if (state.flt === "issues" && !openCount(p)) return false;
+    return true;
+  });
+  const coll = new Intl.Collator("cs");
+  const curVal = p => p.cur.s.t === "pay" ? p.cur.s.v : (p.cur.last ? p.cur.last.salary : -1);
+  list.sort((a, b) => {
+    if (state.srt === "start") return a.start.localeCompare(b.start);
+    if (state.srt === "salary") return curVal(b) - curVal(a);
+    return coll.compare(a.name, b.name);
+  });
+  return list;
+}
+
+function renderList(list) {
+  const body = list.map(p => {
+    const c = p.cur, s = c.s;
+    let salCell;
+    if (s.t === "pay") {
+      salCell = kc(s.v);
+      if (s.h && s.h !== 40) salCell += `<div class="small">≈ ${kc(Math.round(s.v * 40 / s.h / 100) * 100)} na 40 h</div>`;
+    } else if (c.last) salCell = `${chip(s.t)}<div class="small">naposledy ${kc(c.last.salary)}</div>`;
+    else salCell = chip(s.t);
+    let growth = "";
+    if (c.first && c.last && c.first !== c.last) {
+      const g = (c.last.salary - c.first.salary) / c.first.salary * 100;
+      growth = `<span class="${g >= 0 ? "up" : "down"}">${pct(g)}</span><div class="small">od ${kc(c.first.salary)}</div>`;
+    }
+    const h = s.t === "pay" ? s.h : (c.last ? c.last.hoursEff : null);
+    const status = c.ended ? `<span class="chip gone">do ${dCZ(p.end)}</span>` : (p.status ? `<span class="chip ${/mateřsk/i.test(p.status) ? "leave" : (/DPP/.test(p.status) ? "dpp" : "gone")}">${esc(p.status)}</span>` : "");
+    const open = state.open.has(p.name);
+    const id = "d-" + p.name.replace(/[^\p{L}\p{N}]+/gu, "-");
+    return `<tr class="${c.ended ? "ended" : ""}">
+      <td><button class="name-btn" aria-expanded="${open}" aria-controls="${id}" data-name="${esc(p.name)}"><span class="car">▶</span><span class="nm">${esc(p.name)}</span></button>
+        <div class="pos">${esc(p.pos || "")}</div></td>
+      <td>${status}</td>
+      <td class="num">${dCZ(p.start)}</td>
+      <td class="num">${hoursTxt(h)}</td>
+      <td class="num">${salCell}</td>
+      <td class="num">${growth}</td>
+      <td class="num">${c.lastChange ? dCZ(c.lastChange.from) : ""}</td>
+      <td>${spark(p)}</td>
+      <td class="num">${(() => { const n = openCount(p); return n ? `<span class="chip warn">${n}</span>` : ""; })()}</td>
+    </tr>${open ? `<tr class="detail" id="${id}"><td colspan="9">${detail(p)}</td></tr>` : ""}`;
+  }).join("");
+  return `<table>
+    <thead><tr><th>Zaměstnanec</th><th>Stav</th><th class="num">Nástup</th><th class="num">Úvazek</th><th class="num">Aktuální mzda</th><th class="num">Růst od nástupu</th><th class="num">Poslední změna</th><th>Vývoj</th><th class="num" title="Počet nesrovnalostí v dokumentech">K ověření</th></tr></thead>
+    <tbody>${body}</tbody></table>`;
+}
+
+function renderYears(list) {
+  const cols = YEARS.map(y => ({ iso: `${y}-01-01`, label: `1. 1. ${y}` })).concat([{ iso: TODAY, label: "dnes", today: true }]);
+  const body = list.map(p => {
+    let prev = null;
+    const cells = cols.map(col => {
+      const s = at(p, col.iso);
+      let html = "", cls = "cell" + (col.today ? " today" : "");
+      if (s.t === "pay") {
+        html = nf.format(s.v);
+        if (s.h && s.h !== 40) html += `<div class="small">${nf.format(s.h)} h</div>`;
+        if (prev != null && prev !== s.v) cls += " chg" + (s.v < prev ? " neg" : "");
+        prev = s.v;
+      } else if (s.t === "before") { html = "·"; cls += " empty"; }
+      else { html = chip(s.t); }
+      return `<td class="${cls}">${html}</td>`;
+    }).join("");
+    return `<tr class="${p.cur.ended ? "ended" : ""}"><td><strong>${esc(p.name)}</strong><div class="pos">${esc(p.pos || "")}</div></td>${cells}</tr>`;
+  }).join("");
+  return `<table class="years">
+    <thead><tr><th>Zaměstnanec</th>${cols.map(c => `<th class="num">${c.label}</th>`).join("")}</tr></thead>
+    <tbody>${body}</tbody></table>`;
+}
+
+function renderCheck() {
+  const q = state.q.trim().toLowerCase();
+  const coll = new Intl.Collator("cs");
+  const want = s => state.cst === "all" || (state.cst === "todo" && s === "open") || (state.cst === "mine" && (s === "drive" || s === "explained")) || (state.cst === "done" && s === "done");
+  const ro = dbState === "off" || dbState === "readonly";
+  const groups = [...people].sort((a, b) => coll.compare(a.name, b.name)).map(p => {
+    if (q && !p.name.toLowerCase().includes(q)) return "";
+    const items = p.issues.map(t => ({ p, t, k: issueKey(p.name, t) })).filter(it => want(statusOf(it.p.name, it.t)));
+    if (!items.length) return "";
+    const rows = items.map(it => {
+      const c = checks[it.k] || {}; const s = c.status || "open";
+      const btns = Object.keys(STATUS).map(v => `<button type="button" data-k="${it.k}" data-s="${v}" aria-pressed="${s === v}" ${ro ? "disabled" : ""}>${STATUS[v]}</button>`).join("");
+      const meta = c.updated ? `Změněno ${dCZ(c.updated.slice(0, 10))}` : "";
+      return `<div class="chk-item${s === "done" ? " is-done" : ""}">
+        <div class="chk-text">${esc(it.t)}</div>
+        <div class="chk-ctl">
+          <div class="chk-st" role="group" aria-label="Stav bodu">${btns}</div>
+          <textarea data-k="${it.k}" rows="1" placeholder="Vysvětlení nebo kde je dokument (např. „mzda od 1. 1. 2022 byla 38 000 Kč“)" aria-label="Poznámka k bodu" ${ro ? "disabled" : ""}>${esc(drafts[it.k] ?? c.note ?? "")}</textarea>
+          <div class="chk-meta" data-meta="${it.k}">${meta}</div>
+        </div>
+      </div>`;
+    }).join("");
+    return `<div class="chk-person"><h3>${esc(p.name)} ${p.cur.ended ? `<span class="chip gone">do ${dCZ(p.end)}</span>` : ""}</h3>${rows}</div>`;
+  }).join("");
+  const banner = dbState === "off" ? `<div class="chk-banner">Ukládání stavu tu není dostupné (např. při nepřihlášeném zobrazení). Body si můžete přečíst, ale změny se neuloží.</div>`
+    : dbState === "readonly" ? `<div class="chk-banner">K tomuto artefaktu máte jen přístup ke čtení, změny se neuloží.</div>`
+    : dbState === "slow" ? `<div class="chk-banner">Uložený stav se zatím nepodařilo načíst. Zobrazené stavy nemusí být aktuální.</div>`
+    : dbState === "loading" ? `<div class="chk-banner">Načítám uložený stav…</div>` : "";
+  const intro = `<div class="chk-intro">
+    <p>U každého bodu zvolte stav a případně připište vysvětlení. Ukládá se automaticky.</p>
+    <p><b>Doplněno na Drive</b> – dokument jste nahrála do složky zaměstnance. <b>Vysvětleno</b> – napsala jste do poznámky, jak to je. <b>V pořádku / vyřešeno</b> – bod není potřeba řešit.</p>
+    <p>Pak napište Claudovi <b>„aktualizuj tabulku“</b>: dokumenty označené „Doplněno na Drive“ znovu přečte, vysvětlení zapracuje do historie (s poznámkou „doplněno ručně“) a vyřešené body z tabulky odstraní.</p>
+  </div>`;
+  const empty = `<div class="empty-state">${state.cst === "todo" ? "Žádné otevřené body. 🎉" : "V tomto výběru nejsou žádné body."}</div>`;
+  return intro + banner + (groups || empty);
+}
+function updateCheckCounts() {
+  const all = allIssues();
+  const open = all.filter(it => statusOf(it.p.name, it.t) === "open").length;
+  document.getElementById("v-check-n").textContent = open;
+}
+
+function renderStats() {
+  const active = people.filter(p => !p.cur.ended);
+  const records = people.reduce((n, p) => n + p.rows.filter(r => r.kind === "pay").length, 0);
+  const issues = allIssues().filter(it => statusOf(it.p.name, it.t) === "open").length;
+  updateCheckCounts();
+  const onLeave = active.filter(p => p.cur.s.t === "leave" || /mateřsk/i.test(p.status || "")).length;
+  document.getElementById("stats").innerHTML = [
+    [people.length, "zaměstnanců ve složce"],
+    [active.length, "v pracovním poměru"],
+    [onLeave, "na MD/RD (podle dokumentů)"],
+    [records, "mzdových záznamů"],
+    [issues, "otevřených bodů k ověření"]
+  ].map(([v, l]) => `<div class="stat"><b>${nf.format(v)}</b><span>${l}</span></div>`).join("");
+  document.getElementById("asof").textContent = dCZ(TODAY);
+}
+
+function renderLegend() {
+  document.getElementById("legend").innerHTML = state.view === "years"
+    ? `<span><i class="sw" style="background:var(--raise)"></i>změna mzdy proti předchozímu sloupci</span><span><i class="sw" style="background:var(--cut)"></i>snížení (obvykle kratší úvazek)</span><span>${chip("leave")} mateřská / rodičovská</span><span>${chip("dpp")} dohoda o provedení práce</span><span>· před nástupem</span>`
+    : `<span>${chipWarn()} počet bodů k ověření (chybějící dodatky, nejasná data)</span><span>${chip("leave")} mateřská / rodičovská</span><span>Mzda bez pohyblivé složky a prémií</span>`;
+}
+function chipWarn() { return '<span class="chip warn">3</span>'; }
+
+function render() {
+  const v = document.getElementById("view");
+  const chk = state.view === "check";
+  if (chk) v.innerHTML = renderCheck();
+  else {
+    const list = filtered();
+    v.innerHTML = list.length ? (state.view === "years" ? renderYears(list) : renderList(list)) : `<div class="empty-state">Nikdo neodpovídá hledání. Zkuste jiné jméno nebo filtr „Všichni“.</div>`;
+  }
+  document.getElementById("v-list").setAttribute("aria-pressed", state.view === "list");
+  document.getElementById("v-years").setAttribute("aria-pressed", state.view === "years");
+  document.getElementById("v-check").setAttribute("aria-pressed", chk);
+  document.getElementById("cst-wrap").hidden = !chk;
+  document.getElementById("flt-wrap").hidden = chk;
+  document.getElementById("srt-wrap").hidden = chk;
+  document.getElementById("legend").hidden = chk;
+  document.getElementById("srt").value = state.srt;
+  document.getElementById("cst").value = state.cst;
+  updateCheckCounts();
+  if (!chk) renderLegend();
+}
+function findItem(k) { return allIssues().find(it => it.k === k); }
+
+document.getElementById("view").addEventListener("click", e => {
+  const sb = e.target.closest(".chk-st button");
+  if (sb && !sb.disabled) {
+    const it = findItem(sb.dataset.k); if (!it) return;
+    const s = sb.dataset.s;
+    if ((checks[it.k] || {}).status === s) return;
+    writeCheck(it, { status: s });
+    render(); renderStats();
+    const again = document.querySelector(`.chk-st button[data-k="${it.k}"][data-s="${s}"]`);
+    if (again) again.focus();
+    return;
+  }
+  const b = e.target.closest(".name-btn");
+  if (!b) return;
+  const n = b.dataset.name;
+  state.open.has(n) ? state.open.delete(n) : state.open.add(n);
+  render();
+  const again = [...document.querySelectorAll(".name-btn")].find(x => x.dataset.name === n);
+  if (again) again.focus();
+});
+document.getElementById("v-list").onclick = () => { state.view = "list"; save(); render(); };
+document.getElementById("v-years").onclick = () => { state.view = "years"; save(); render(); };
+document.getElementById("v-check").onclick = () => { state.view = "check"; save(); render(); };
+document.getElementById("cst").onchange = e => { state.cst = e.target.value; render(); };
+function flushNote(ta) {
+  const k = ta.dataset.k; clearTimeout(noteTimers[k]); delete noteTimers[k];
+  const it = findItem(k); if (!it) return;
+  const c = checks[k] || {};
+  delete drafts[k];
+  if ((c.note || "") === ta.value) { const m = document.querySelector(`[data-meta="${k}"]`); if (m) m.textContent = c.updated ? `Změněno ${dCZ(c.updated.slice(0, 10))}` : ""; return; }
+  const patch = { note: ta.value };
+  // writing an explanation on an open item marks it "Vysvětleno"
+  if (ta.value.trim() && (c.status || "open") === "open") patch.status = "explained";
+  writeCheck(it, patch);
+  const m = document.querySelector(`[data-meta="${k}"]`); if (m) m.textContent = "Uloženo";
+  if (patch.status) { const st = document.querySelectorAll(`.chk-st button[data-k="${k}"]`); st.forEach(b => b.setAttribute("aria-pressed", b.dataset.s === patch.status)); renderStats(); }
+}
+document.getElementById("view").addEventListener("input", e => {
+  const ta = e.target.closest("textarea[data-k]"); if (!ta) return;
+  const k = ta.dataset.k;
+  drafts[k] = ta.value;
+  const m =document.querySelector(`[data-meta="${k}"]`); if (m) m.textContent = "Ukládám…";
+  clearTimeout(noteTimers[k]);
+  noteTimers[k] = setTimeout(() => flushNote(ta), 1200);
+});
+document.getElementById("view").addEventListener("focusout", e => {
+  const ta = e.target.closest("textarea[data-k]"); if (ta && noteTimers[ta.dataset.k]) flushNote(ta);
+});
+document.getElementById("q").oninput = e => { state.q = e.target.value; render(); };
+document.getElementById("flt").onchange = e => { state.flt = e.target.value; render(); };
+document.getElementById("srt").onchange = e => { state.srt = e.target.value; save(); render(); };
+
+renderStats();
+render();
+</script>

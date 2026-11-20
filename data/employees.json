@@ -1,0 +1,2433 @@
+[
+ {
+  "name": "Belejová Jana",
+  "start": "2026-10-19",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2026-10-19",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1_xpSdMe2l2LGiuP-ZjjmzCY7cpq-TH1H",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku (bez náhrady nákladů), podepsáno 19. 10. 2026, na dobu neurčitou.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-10-19",
+    "salary": 33000,
+    "hours": 40,
+    "position": "Junior B2B Account Manager",
+    "doc": "Pracovní smlouva",
+    "fileId": "1uRuI6lhsTMIS_EZRfXCX322MDJAUVoIL",
+    "note": "Mzda sjednána jen po dobu zkušební doby (4 měsíce)."
+   }
+  ],
+  "issues": [
+   "Smlouva určuje mzdu jen pro zkušební dobu (do cca 18. 2. 2027), na dobu potom mzda chybí."
+  ]
+ },
+ {
+  "name": "Ferents Pavlo",
+  "start": "2026-11-01",
+  "end": "2027-12-31",
+  "status": "doba určitá do 31. 12. 2027",
+  "events": [
+   {
+    "from": "2026-11-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1aKhjzgBUkp263nsbDJR-hooKYBOUCyhA",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku k pracovní smlouvě ze dne 14. 10. 2026, podepsáno cca 16. 10. 2026 (rukou psáno „16.10.1016“).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-11-01",
+    "salary": 42000,
+    "hours": 40,
+    "position": "Senior B2B Account Manager",
+    "doc": "Pracovní smlouva",
+    "fileId": "15zvLr-s6c5RLLuRnyJu0DQcNpLigSIy0",
+    "note": "Text článku o mzdě je neúplný („náleží po dobu mzda…“), patrně jen na zkušební dobu."
+   }
+  ],
+  "issues": [
+   "Neúplné znění článku o mzdě, není jasné, zda 42 000 Kč platí jen ve zkušební době.",
+   "Nepodepsaný koncept smlouvy uvádí dobu neurčitou, v datech je doba určitá do 31. 12. 2027 – ověřit podle podepsané smlouvy."
+  ]
+ },
+ {
+  "name": "Záborská Monika",
+  "start": "2026-08-10",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2026-08-10",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1lDtwOj2-aANdsDpo253m6qD-YBfaz7eG",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku k pracovní smlouvě ze dne 20. 7. 2026, podepsáno 20. 7. 2026.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-08-10",
+    "salary": 47000,
+    "hours": 40,
+    "position": "Projektový manažer",
+    "doc": "Pracovní smlouva",
+    "fileId": "11l02vfUZOC4mSDPkRr0ZD5pi3OW3Sjxz",
+    "note": null
+   }
+  ],
+  "issues": []
+ },
+ {
+  "name": "Kostenko Natalia",
+  "start": "2026-07-27",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2026-07-27",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "15-QztINfWfJPSVHOS1n5qwGl-O2wyGSR",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku k pracovní smlouvě ze dne 8. 6. 2026, podepsáno 8. 6. 2026.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-07-27",
+    "salary": 40000,
+    "hours": 40,
+    "position": "Projektový manažer",
+    "doc": "Pracovní smlouva",
+    "fileId": "1vZdQb-E6vt5kfwkeIxzW-fyyJ4XXg00I",
+    "note": "Místo výkonu práce České Budějovice."
+   }
+  ],
+  "issues": []
+ },
+ {
+  "name": "Krajčovičová Milina",
+  "start": "2026-08-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2026-08-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1cgNPVH6TSEK3qFzGUzGYYobjQTJh2p1K",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku k pracovní smlouvě ze dne 29. 6. 2026, podepsáno 29. 6. 2026.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-08-01",
+    "salary": 49000,
+    "hours": 40,
+    "position": "Vendor manažer",
+    "doc": "Pracovní smlouva",
+    "fileId": "1llTDpi685GI7j6UNsuFQn1z2kJHEC1SD",
+    "note": "Mzda sjednána jen po dobu zkušební doby (4 měsíce)."
+   }
+  ],
+  "issues": [
+   "Mzda jen pro zkušební dobu (do cca 30. 11. 2026), na dobu potom mzda chybí."
+  ]
+ },
+ {
+  "name": "Wehle Toby",
+  "start": "2026-03-30",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2026-03-30",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1V5VmgISfsr8wA1c9GuJvDgw6YMfS8O0d",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku, podepsáno 30. 3. 2026 (datum smlouvy v textu nevyplněno).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-03-30",
+    "salary": 38000,
+    "hours": 40,
+    "position": "Projektový manažer",
+    "doc": "Pracovní smlouva",
+    "fileId": "1QrowGAEqKFMuQIkH_bi6yg4Ia6zRuMBT",
+    "note": "Mzda sjednána jen po dobu zkušební doby (4 měsíce)."
+   }
+  ],
+  "issues": [
+   "Zkušební doba skončila cca 29. 7. 2026, ve složce chybí dodatek nebo výměr se mzdou na dobu potom."
+  ]
+ },
+ {
+  "name": "Šimíček Andrej",
+  "start": "2026-07-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2026-07-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1_MekOimENEoaxEV7V6P_6ywcTYBALf2g",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku k pracovní smlouvě ze dne 22. 5. 2026, podepsáno elektronicky 22.–23. 5. 2026 (shodná kopie i ve druhé složce, fileId 1p-5knO-RYizSm4M4qIrhF5HuqO8DJPrv).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-07-01",
+    "salary": 40000,
+    "hours": 40,
+    "position": "Projektový manažer",
+    "doc": "Pracovní smlouva",
+    "fileId": "1-U1OPIni2R7DZfXUwIUuSiXYQTWhIoxK",
+    "note": "Mzda sjednána jen po dobu zkušební doby (4 měsíce)."
+   }
+  ],
+  "issues": [
+   "Zkušební doba skončila cca 31. 10. 2026, chybí dodatek nebo výměr na dobu potom.",
+   "Zaměstnanec má na Drivu dvě složky se shodnými dokumenty."
+  ]
+ },
+ {
+  "name": "Panošová Adéla",
+  "start": "2026-04-01",
+  "end": null,
+  "status": "částečný úvazek",
+  "events": [
+   {
+    "from": "2026-04-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1dyflkoCRtGo9-yKyfzhTs5SO0tqLCs3Z",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku k pracovní smlouvě ze dne 1. 4. 2026, podepsáno 1. 4. 2026.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-04-01",
+    "salary": 25000,
+    "hours": 20,
+    "position": "Office Manager",
+    "doc": "Pracovní smlouva",
+    "fileId": "1Utqhzgu9RJ_aAAMFObTgt-d6b5NePdiy",
+    "note": "Mzda sjednána jen po dobu zkušební doby (4 měsíce)."
+   }
+  ],
+  "issues": [
+   "Zkušební doba skončila cca 31. 7. 2026, chybí dodatek nebo výměr na dobu potom."
+  ]
+ },
+ {
+  "name": "Poláčková Michaela",
+  "start": "2026-03-01",
+  "end": "2026-05-10",
+  "status": "ukončeno ve zkušební době",
+  "events": [
+   {
+    "from": "2026-03-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "174-h8xENXcUjyrK8NjC1pTAPH71Nirc7",
+    "note": "Bez vlivu na mzdu: sjednává možnost práce na dálku k pracovní smlouvě ze dne 16. 2. 2026, podepsáno 16. 2. 2026.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2026-03-01",
+    "salary": 38000,
+    "hours": 40,
+    "position": "Projektová manažerka",
+    "doc": "Pracovní smlouva",
+    "fileId": "1j9RR32LjRd7g1ufTZx1aXpsj7aCcvJA3",
+    "note": "Olomouc."
+   },
+   {
+    "from": "2026-05-10",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Zrušení PP ve zkušební době",
+    "fileId": "1BZL1FVZ-Nrvup6vjIGpOCKPIM3YMq8Cu",
+    "note": "Bez vlivu na mzdu: zaměstnankyně zrušila pracovní poměr ve zkušební době (§ 66 ZP) ke dni 10. 5. 2026, oznámení ze dne 7. 5. 2026.",
+    "kind": "info",
+    "added": true
+   }
+  ],
+  "issues": []
+ },
+ {
+  "name": "Kubaláková Hana",
+  "start": "2024-06-01",
+  "end": "2026-08-25",
+  "status": "ukončeno dohodou",
+  "events": [
+   {
+    "from": "2024-05-14",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1f-Wujz33WcbCzmQC7WV9desE1Qadtolv",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku; PDF je sken bez čitelného textu, datum odvozeno z data nahrání (14. 5. 2024, den uzavření smlouvy).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-06-01",
+    "salary": 48000,
+    "hours": 40,
+    "position": "Business Development Representative",
+    "doc": "Pracovní smlouva",
+    "fileId": "1wKa5Ud5Hp_K8pg9IDV_dHiQsVQ_jn05i",
+    "note": null
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 49400,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1MognM0xz4g7lNWy7b-vMjx3Mlr9DIHbY",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-08-25",
+    "salary": null,
+    "hours": null,
+    "position": "Business Development Representative",
+    "doc": "Dohoda o rozvázání pracovního poměru",
+    "fileId": "10e98H9d_K866qzKma5AEXTLXIg5QWBWl",
+    "note": "Bez vlivu na mzdu: pracovní poměr (ze smlouvy z 14. 5. 2024) skončil dohodou ke dni 25. 8. 2026, podepsáno 25. 8. 2026, vč. předávacího protokolu.",
+    "kind": "info",
+    "added": true
+   }
+  ],
+  "issues": [
+   "Pracovní poměr skončil dohodou k 25. 8. 2026."
+  ]
+ },
+ {
+  "name": "Ehrmannová Monika",
+  "start": "2022-06-13",
+  "end": null,
+  "status": "mateřská / rodičovská",
+  "events": [
+   {
+    "from": "2022-06-13",
+    "salary": 30000,
+    "hours": 40,
+    "position": "Sales Manager",
+    "doc": "Pracovní smlouva + platový výměr",
+    "fileId": "1rVTs7JorIvy7PSUcA2kwGVwAf-lhK0v3",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 33000,
+    "hours": null,
+    "position": "Sales Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1zEdovV0hZaf1NoyCLthPMGMmBWAQXFde",
+    "note": null
+   },
+   {
+    "from": "2024-04-27",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Prohlášení o nástupu na rodičovskou dovolenou",
+    "fileId": "1ynVidu3jlRsC6otUDQSAPv-BTqrUr8DX",
+    "note": "Bez vlivu na mzdu: mateřská končí 26. 4. 2024, poté rodičovská dovolená (rodičovský příspěvek od 1. 5. 2024) pravděpodobně do září 2026; podepsáno 11. 4. 2024.",
+    "kind": "info",
+    "added": true
+   }
+  ],
+  "issues": [
+   "Mateřská skončila 26. 4. 2024, rodičovská pravděpodobně do 9/2026; v 8/2026 nahrán rodný list druhého dítěte.",
+   "Chybí dokument s přesným začátkem mateřské a s návratem do práce."
+  ]
+ },
+ {
+  "name": "Panošová Hana",
+  "start": "2022-11-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2022-11-01",
+    "salary": 55000,
+    "hours": 40,
+    "position": "Director of Operations",
+    "doc": "Pracovní smlouva + mzdový výměr",
+    "fileId": "16POgTck3KaNljkAvBOf9tWp7tFimX_cO",
+    "note": "Navíc čtvrtletní bonus podle plánu hrubé marže."
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 57800,
+    "hours": 40,
+    "position": "Director of Operations",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1KTDCGZpLpG6yevFo_9_nfFedHQj4tCmw",
+    "note": "Podepsáno 29. 1. 2024, mzda platí od 1. 1. 2024."
+   },
+   {
+    "from": "2024-01-29",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1H4A6KI_Eag8HoTxU_ioQyWvfuwW45aLV",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku dle dohody s nadřízeným, bez náhrady nákladů; podepsáno 29. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-08-01",
+    "salary": 85000,
+    "hours": null,
+    "position": "Director of Operations",
+    "doc": "Dodatek č. 1",
+    "fileId": "1KCD7KBCROJal6x1CcU6hUX-CnWYfNAEE",
+    "note": null
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 87600,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "1c5k2rQC6-9ptensT-OHGPB7oLgdLzGIJ",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 90200,
+    "hours": null,
+    "position": "Director of Operations",
+    "doc": "Dodatek č. 3",
+    "fileId": "1_JdSe3D00YT-_NHHHubH4mfiBcVgx3LE",
+    "note": "Datum podpisu je ve skenu nečitelné."
+   },
+   {
+    "from": "2026-04-13",
+    "salary": 25000,
+    "hours": 10,
+    "position": "Director of Operations",
+    "doc": "Dodatek č. 4 (zkrácení úvazku)",
+    "fileId": "1CpoApoC7lrZhSdFn0xGou_AV3V2W1pkQ",
+    "note": "Úvazek zkrácen na 2 h denně."
+   }
+  ],
+  "issues": []
+ },
+ {
+  "name": "Rybová Karla",
+  "start": "2023-11-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2023-11-01",
+    "salary": null,
+    "hours": null,
+    "position": "Project Manager pro VIP klienty",
+    "doc": "Pracovní smlouva 2023",
+    "fileId": "1tR6sj1iCpAzLPXUdPQPN42tRrRT5sUBt",
+    "note": "Bez vlivu na mzdu: podepsaná původní smlouva na dobu neurčitou, 30 h týdně, Praha; mzda je stanovena mzdovým výměrem (již v historii).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2023-11-01",
+    "salary": 26000,
+    "hours": 30,
+    "position": "Project Manager pro VIP klienty",
+    "doc": "Pracovní smlouva + mzdový výměr",
+    "fileId": "19pvSpWvoLHAvia06M6hauHZ9-wHCckke",
+    "note": "Částka je ve mzdovém výměru, smlouva ji neuvádí."
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 26000,
+    "hours": 30,
+    "position": "Project Manager pro VIP klienty",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "10VvFDRHMXgEsmT6zCiLlTSQPHVEKWoxX",
+    "note": "Beze změny mzdy."
+   },
+   {
+    "from": "2024-01-16",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "10AYmHaUGXgOAvTrcitOEAm3i6eM49f9z",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku k nové smlouvě z 16. 1. 2024, bez náhrady nákladů; podepsáno 16. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-07-01",
+    "salary": 35000,
+    "hours": 40,
+    "position": "Project Manager pro VIP klienty",
+    "doc": "Dodatek č. 1",
+    "fileId": "1tAb8flBz1kJ-yBI9yp_kapXJZC_Jf2NL",
+    "note": "Úvazek zvýšen na 40 h."
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 35700,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "10nj2IEacPTYlDPytB0oIAz5Aw7I4LXLQ",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 36800,
+    "hours": null,
+    "position": "Project Manager pro VIP klienty",
+    "doc": "Dodatek č. 3",
+    "fileId": "19fGEGB4bQagZBJbJ0j8hWTF9p4lSYvcl",
+    "note": null
+   }
+  ],
+  "issues": []
+ },
+ {
+  "name": "Englová Nikola",
+  "start": "2023-10-16",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2023-10-16",
+    "salary": null,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva 2023",
+    "fileId": "1Y9Cp85qRjGliCEPui42GOo84xC-FNvr6",
+    "note": "Bez vlivu na mzdu: podepsaná původní smlouva na dobu neurčitou, 40 h týdně, Praha; mzda je stanovena mzdovým výměrem (již v historii).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2023-10-16",
+    "salary": 40000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + mzdový výměr",
+    "fileId": "1YISv7pz3Mox84pywUA_4_8n0RbN4lDt7",
+    "note": "Částka je ve mzdovém výměru."
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 40000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1RKsP0oIiSumewPOPmDj58mUECx3IcFUn",
+    "note": "Beze změny mzdy."
+   },
+   {
+    "from": "2024-01-09",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1OK2oOyAhXh8RvpsfjJQmTojAVyi9Ctiz",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku k nové smlouvě z 2024, bez náhrady nákladů; podepsáno 9. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 40800,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1OIPPVLgCTcaCQc-HfqK-7kqawsmBf10n",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 42000,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek č. 2",
+    "fileId": "1yf9hCECjwDi0ede4WxZedFVY8EGPbeOv",
+    "note": null
+   }
+  ],
+  "issues": []
+ },
+ {
+  "name": "Mrkvicová (Chromečková) Tereza",
+  "start": "2023-06-01",
+  "end": null,
+  "status": "pravděpodobně mateřská",
+  "events": [
+   {
+    "from": "2023-06-01",
+    "salary": null,
+    "hours": null,
+    "position": "Account Manager",
+    "doc": "Pracovní smlouva 2023",
+    "fileId": "12VfErtM4pcGgxQi7cQuU4-uaRp7bp1tB",
+    "note": "Bez vlivu na mzdu: podepsaná původní smlouva (27. 4. 2023) na dobu určitou 1. 6. 2023 – 31. 5. 2024, 40 h týdně, Olomouc; mzda dle mzdového výměru.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2023-06-01",
+    "salary": 33000,
+    "hours": 40,
+    "position": "Account Manager",
+    "doc": "Pracovní smlouva + mzdový výměr",
+    "fileId": "1Ld8y3xof6urQR5zigD_7rArxja0G_hJL",
+    "note": "Doba určitá do 31. 5. 2024; navíc čtvrtletní bonus."
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 34700,
+    "hours": 40,
+    "position": "Account Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1u7uAvl3tGHiKJCxVkPkW0s78MJHgu805",
+    "note": "Změna na dobu neurčitou."
+   },
+   {
+    "from": "2024-01-29",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1YhiNTIE0MzQP8gVOv5PW8dr7MnULUw2x",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku k nové smlouvě z 29. 1. 2024, bez náhrady nákladů; podepsáno 29. 1. 2024.",
+    "kind": "info",
+    "added": true
+   }
+  ],
+  "issues": [
+   "Po 1/2024 žádné dokumenty. Rodný list dítěte nahraný v 1/2025 naznačuje mateřskou, personální dokument o ní ve složce není."
+  ]
+ },
+ {
+  "name": "Ondrák Vít",
+  "start": "2022-05-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2022-05-01",
+    "salary": 37000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + mzdový výměr",
+    "fileId": "1idoRz9DOOX3ZASz6bilLLHsAmU7Uz1FJ",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 40700,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1ytME_73yLnwxIe2Vx53tSxzD3GQX8c0P",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 42700,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "11oAa4n1ynK89g1I9RETJ-atbDRZUc89w",
+    "note": null
+   },
+   {
+    "from": "2024-01-10",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "19uvm0u0crbvLNGA7mseXbhBWgsuAKHw5",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku k nové smlouvě z 1/2024, bez náhrady nákladů; podepsáno 10. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 43600,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "12n55vQ6cTGh_Ycc9ICSJ-rKV6CCfqwve",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 44900,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek č. 2",
+    "fileId": "1n6kByJJfur17AkKEQyFaozi42wNGEaFK",
+    "note": null
+   }
+  ],
+  "issues": []
+ },
+ {
+  "name": "Kolbach Nicole",
+  "start": "2022-04-01",
+  "end": null,
+  "status": "po rodičovské, zkrácený úvazek",
+  "events": [
+   {
+    "from": "2022-04-01",
+    "salary": 25000,
+    "hours": 20,
+    "position": "Vendor Manager",
+    "doc": "Pracovní smlouva + platový výměr (jen nepodepsaný .doc)",
+    "fileId": "1lOtzbL0hYKBGeG_afTQQhHvZnzybJedZ",
+    "note": "Výměr uvádí platnost od 1. 2. 2022, smlouva nástup 1. 4. 2022."
+   },
+   {
+    "from": "2022-09-01",
+    "salary": 37500,
+    "hours": 30,
+    "position": "Vendor Manager",
+    "doc": "Platový výměr (plánované navýšení)",
+    "fileId": "1lOtzbL0hYKBGeG_afTQQhHvZnzybJedZ",
+    "note": "Úvazek 6 h denně."
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 41250,
+    "hours": null,
+    "position": "Vendor Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1zIhwPrj2_7m7IDQHlj7akdqggfid1RtP",
+    "note": null
+   },
+   {
+    "from": "2023-04-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Mateřská (PPM od 1. 4. 2023)",
+    "fileId": "1qhlsubame7UO8TUazT0p763ydWLZnWOs",
+    "note": "Mateřská a rodičovská."
+   },
+   {
+    "from": "2026-01-05",
+    "salary": 30000,
+    "hours": 20,
+    "position": "Head of Vendor management",
+    "doc": "Pracovní smlouva 2026 (návrat z rodičovské)",
+    "fileId": "1MIOUnMUtuhNDJsNdoCNSCuzdgi9za2mi",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Původní smlouva z 2022 je jen jako nepodepsaný .doc, podepsané PDF chybí.",
+   "PDF smlouvy ve složce Aptien je také nepodepsané a uvádí 25 000 Kč „od 1. 2. 2022“, přitom nástup je 1. 4. 2022."
+  ]
+ },
+ {
+  "name": "Eichner (Ingrová) Lucie",
+  "start": "2018-09-07",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2018-09-07",
+    "salary": 26000,
+    "hours": 40,
+    "position": "Sales Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1",
+    "fileId": "1kXpCTy2EnC6--Jj2W9A5U2hKr8IngiEx",
+    "note": null
+   },
+   {
+    "from": "2022-01-01",
+    "salary": 33000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek 2021 + platový výměr",
+    "fileId": "1G2bY7HUF29GjenoUwDL7PzHeui12TpWD",
+    "note": "Nalezeno jen ve složce Aptien. Bez data podpisu, podpis zaměstnankyně nečitelný. Soubor „dodatek_2022“ má totožný text."
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 40000,
+    "hours": null,
+    "position": "Sales Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1zEqamfNBH46hUv6wjmuJqfPpt4T5lvka",
+    "note": "Podepsáno až 13. 2. 2023."
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 42000,
+    "hours": 40,
+    "position": "Sales Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1GKXFYjcq5E67eC_RLy_GQn_5GkVBin2j",
+    "note": null
+   },
+   {
+    "from": "2024-01-24",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "14T_0UgtNyj98rRIZv2MQ_2pxIcMxX3Ln",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku po dohodě s nadřízeným, bez náhrady nákladů; podepsáno 24. 1. 2024, účinná dnem podpisu.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 43300,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1Z6I-oB7fjpP64Pkej3dW3oyHRibO1UH8",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 44600,
+    "hours": null,
+    "position": "Sales Manager",
+    "doc": "Dodatek č. 2",
+    "fileId": "1pWlNIoc4KGU7heI7wVTxMyN1fAJizcfO",
+    "note": null
+   },
+   {
+    "from": "2026-09-01",
+    "salary": 49060,
+    "hours": null,
+    "position": "Sales Manager",
+    "doc": "Dodatek č. 2 (duplicitní číslo)",
+    "fileId": "1tyv9iyfhQz6AZuEkQk5lN2BCuaSUa0Ew",
+    "note": "Druhý dodatek se stejným číslem, správně by měl být č. 3."
+   }
+  ],
+  "issues": [
+   "Mezi 9/2018 (26 000) a 1/2023 (40 000) chybí dokumenty, zvýšení v letech 2019–2022 nejsou doložená.",
+   "Dva různé dodatky mají číslo 2 (1. 1. 2026 a 1. 9. 2026).",
+   "Změna příjmení z Ingrová na Eichner není zachycena v dodatku."
+  ]
+ },
+ {
+  "name": "Ptáčková (Baštincová) Jana",
+  "start": "2018-09-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2018-09-01",
+    "salary": 22000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1",
+    "fileId": "1Nz6msWmeuMLgJgnNOnHuC0XvW8RefK0E",
+    "note": "Navíc záloha na prémie 5 000 Kč měsíčně."
+   },
+   {
+    "from": "2019-01-01",
+    "salary": 27000,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek č. 1",
+    "fileId": "1GIfBPaizlYEnedHM28B9QofEPKWLnPMj",
+    "note": "Záloha na prémie zrušena."
+   },
+   {
+    "from": "2022-01-01",
+    "salary": 34000,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek 2022 + platový výměr",
+    "fileId": "1pSQjCpfkpR-70SktSqYRWtTKMLTMFZTF",
+    "note": null
+   },
+   {
+    "from": "2023-03-20",
+    "salary": null,
+    "hours": null,
+    "position": "Vendor Manager",
+    "doc": "Dodatek č. 3 (změna pozice)",
+    "fileId": "1jeVmYuPbckLjHoJIgQQ9KfL0gs66gX33",
+    "note": "Mění jen pozici a místo výkonu práce."
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 35700,
+    "hours": 40,
+    "position": "Vendor Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1qJxjFRTxkykOpJKCUmmOPcfrchvvluFP",
+    "note": null
+   },
+   {
+    "from": "2024-01-23",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1la01zCVqyyZYh2ruuNF6lSqEjWoUP_WT",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku po dohodě s nadřízeným, bez náhrady nákladů; podepsáno 23. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 36800,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1FP0LjOMU5Nu4nEDyp0uVJr0MauefFBnt",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 37900,
+    "hours": null,
+    "position": "Vendor Manager",
+    "doc": "Dodatek č. 2",
+    "fileId": "1e4XkETGSxi9d5TLwLIe_1GaLUqUMLIJc",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Mezi 1/2019 a 1/2022 chybí dokumenty.",
+   "Chybí výměr k 1. 1. 2023, ostatní tehdy dostali zvýšení.",
+   "Změna příjmení z Baštincová na Ptáčková není zachycena v dodatku."
+  ]
+ },
+ {
+  "name": "Dvouletá Zuzana",
+  "start": "2018-01-15",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2018-01-15",
+    "salary": 35000,
+    "hours": 37.5,
+    "position": "Senior Sales Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1",
+    "fileId": "1EG16IYvROSmbeDshvOX3fRTfjMJTyGTh",
+    "note": "Pracovní doba 7,5 h denně, není jasné, zda včetně pauzy."
+   },
+   {
+    "from": "2018-05-25",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1kM2IkO6oUhtzLgQHhMBN0S76UOL08PC-",
+    "note": "Bez vlivu na mzdu: nové znění čl. 5 o mlčenlivosti a GDPR, podepsáno 24. 5. 2018.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2018-12-31",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o rozvázání PP (nepodepsaná)",
+    "fileId": "1bhH0e4Y7w8Bee6O7m75nDG6JJdizLEYk",
+    "note": "Nalezeno jen ve složce Aptien. Nepodepsaný koncept, PP zjevně pokračoval (výměr 2019 a další).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2019-01-01",
+    "salary": 38000,
+    "hours": 37.5,
+    "position": "Head of Sales",
+    "doc": "Dodatek č. 2 + platový výměr č. 2",
+    "fileId": "1Mpq5srK5wOaQmv5YCHOsLPQISl-XJtbD",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 51700,
+    "hours": null,
+    "position": "Head of Sales",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1zDzg3xL4kyLSmT4dvDrbAwypJxRTmjYf",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 62000,
+    "hours": 40,
+    "position": "Head of Sales",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1ZmRx4LjIJN0H5pd4V1j8RR3zMltO8lkz",
+    "note": null
+   },
+   {
+    "from": "2024-01-29",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1NPtUpDdjrssKOIktXi6MxTWGUZIg5w-J",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku po dohodě s nadřízeným, bez náhrady nákladů; podepsáno 29. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 63900,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1AdpYG-8TjPZbX5DZE0yFAYvQG7kA5Kej",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 65800,
+    "hours": null,
+    "position": "Head of Sales",
+    "doc": "Dodatek č. 2",
+    "fileId": "1IPb-FspomMlSef-BzZCrlLfpJzdhDbju",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Mezi 1/2019 (38 000) a 1/2023 (51 700) chybí dokumenty.",
+   "Úvazek před rokem 2024 je nejasný (37,5 nebo 35 h)."
+  ]
+ },
+ {
+  "name": "Kafka Jan",
+  "start": "2018-07-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2018-05-04",
+    "salary": null,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1 (nepodepsaný koncept)",
+    "fileId": "1IGILtItxAcivolorWbRQcHi_dkcx1Udd",
+    "note": "Bez vlivu na mzdu: koncept ze 4. 5. 2018 je obsahově shodný s podepsanou smlouvou (25 000 Kč + záloha na bonus 5 000 Kč, 8,5 h denně s půlhodinovou pauzou).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2018-07-01",
+    "salary": 25000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1",
+    "fileId": "1DdyVUM6keR2jq5-cXtFt4T3ImRNEiNRm",
+    "note": "Navíc záloha na prémie 5 000 Kč měsíčně."
+   },
+   {
+    "from": "2018-07-09",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1yq9IbeTl2WFgCFvbSN2rFgTdZLStXR3b",
+    "note": "Bez vlivu na mzdu: nové znění čl. 5 o mlčenlivosti a GDPR s účinností od 9. 7. 2018, podepsáno týž den.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2019-01-01",
+    "salary": 30000,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek č. 2",
+    "fileId": "1IyIpvTE1nyWDL-Vgbcf2gr9BoJzRwiIa",
+    "note": "Záloha na prémie zrušena."
+   },
+   {
+    "from": "2019-06-01",
+    "salary": 35000,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek „Zvýšení mzdy“",
+    "fileId": "12DHnXjjqLqG3WrhNyqYBWyzZIepsyBCX",
+    "note": "Bez data podpisu."
+   },
+   {
+    "from": "2022-01-01",
+    "salary": 41000,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek 2022 + platový výměr",
+    "fileId": "1pKUoJmomGH4T72RJJ8T18W6xoYM8D8Yb",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 45100,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1f4-T351dPDD86xw9iyICVxVfBI5ZjdTn",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 47400,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1_xaMzmLhG3DWG_LeXc4sjeI1ITZ24bjJ",
+    "note": null
+   },
+   {
+    "from": "2024-01-08",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "11JXjC4YlHxoYAPqpgWMBoQIQzxKMcDlk",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku po dohodě s nadřízeným, bez náhrady nákladů; podepsáno 8. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 48800,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1NzP3BAnLpTx1Ik7dRQIj34xqnbme6iVK",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 50300,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek č. 2",
+    "fileId": "1jrs12YIbNbx6AwGh5gkDGMjw-6vn2E6_",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Datum nástupu: smlouva uvádí 1. 7. 2018, Dodatek č. 1 a název konceptu 9. 7. 2018.",
+   "Mezi 6/2019 a 1/2022 chybí dokumenty.",
+   "Text smlouvy i konceptu uvádí nástup 1. 7. 2018, jen Dodatek č. 1 a název souboru uvádějí 9. 7. 2018."
+  ]
+ },
+ {
+  "name": "Soukupová Anežka",
+  "start": "2021-03-01",
+  "end": null,
+  "status": "mateřská / rodičovská",
+  "events": [
+   {
+    "from": "2021-03-01",
+    "salary": null,
+    "hours": null,
+    "position": "project manager",
+    "doc": "Pracovní smlouva 2021 (podepsaná)",
+    "fileId": "1A6RHxm-jo9uQ4aV_2Y6sQxyDdq_Q3kCU",
+    "note": "Bez vlivu na mzdu: podepsaná smlouva (1. 3. 2021, Praha, doba neurčitá, 40 h týdně), mzdu odkazuje na mzdový výměr, který ve složce chybí.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2021-03-01",
+    "salary": 35000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + mzdový výměr (jen nepodepsaný vzor)",
+    "fileId": "1KTDqhkqNEc4LhOI5Tc6tTPVi6Mx-NnCr",
+    "note": "Smlouva mzdu neuvádí, částka je jen z nepodepsaného vzoru výměru."
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 40700,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1yvJscqLRPkGa3DecdagaC_R5QjQekyjc",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 42700,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1KYnuBBsKkw3wT7VyEFdHP7fz2kSxgSN5",
+    "note": null
+   },
+   {
+    "from": "2024-01-15",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Souhlas s jinou výdělečnou činností",
+    "fileId": "1HH122B5E5vHr2Pw9H31b5GpXQcnnT6-p",
+    "note": "Bez vlivu na mzdu: zaměstnavatel souhlasí s OSVČ v oblasti překladů a tlumočení; v dokumentu je datum 15. 1. 2014, zjevně překlep za 15. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-01-15",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1urYR2SIkz8adIih4ggPjDG41A-TtmbHo",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku po dohodě s nadřízeným, bez náhrady nákladů; podepsáno 15. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 44000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1BBSr1OiLA7gifpvKll6Jev9SuHJLMPsu",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 45300,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek č. 2",
+    "fileId": "1e4SS9traVK-W8r78VPFL2-BvRWi-TIvp",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Chybí podepsaný mzdový výměr z roku 2021.",
+   "Chybí doklad ke změně k 1. 1. 2022 (pokud byla).",
+   "Souhlas s jinou výdělečnou činností nese datum 15. 1. 2014, zřejmě překlep za 2024.",
+   "Doplnit termín nástupu na MD a předpokládaný konec MD/RD – žádost o PPM ani žádost o rodičovskou ve složce nejsou (rodný list dítěte nahrán 9/2026)."
+  ]
+ },
+ {
+  "name": "Přílepková Eva",
+  "start": "2022-06-21",
+  "end": null,
+  "status": "druhý pracovní poměr",
+  "events": [
+   {
+    "from": "2021-03-29",
+    "salary": 30000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + mzdový výměr (1. pracovní poměr)",
+    "fileId": "1mFQm_x0rADNr8nX-R2uH0c7fMv74j2K5",
+    "note": "První pracovní poměr, ukončen dohodou k 30. 4. 2022."
+   },
+   {
+    "from": "2022-03-31",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Výpověď dle § 52 písm. c) (koncept docx)",
+    "fileId": "1kC1SdoM2HA9Tg2s5gSUnqKHSiRpJuSZO",
+    "note": "Bez vlivu na mzdu: nepodepsaný koncept téže výpovědi k 31. 3. 2022.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2022-03-31",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Výpověď dle § 52 písm. c) (neplatná)",
+    "fileId": "16j37Mn7XZRmSTAEmOQLqlIpnKQKMiZ_0",
+    "note": "Bez vlivu na mzdu: výpověď pro nadbytečnost k 31. 3. 2022 s odstupným jednoho měsíčního výdělku, soubor označen jako neplatný a nahrazen dohodou k 30. 4. 2022.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2022-05-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Ukončení PP dohodou",
+    "fileId": "1s5pYcRqirhAvb2XgWDymhcsqQJKy6PmN",
+    "note": "Mimo pracovní poměr do 20. 6. 2022."
+   },
+   {
+    "from": "2022-05-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Rozvázání PP dohodou (kopie, odstupné)",
+    "fileId": "16vQMrCoA5EgXIdb5Sdvjclvw4PsUzHxZ",
+    "note": "Bez vlivu na mzdu: kopie dohody o rozvázání PP k 30. 4. 2022; název souboru uvádí odstupné ve výši 1 měsíce, text dohody odstupné nezmiňuje.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2022-06-21",
+    "salary": null,
+    "hours": null,
+    "position": "project manager",
+    "doc": "Pracovní smlouva (nový PP)",
+    "fileId": "12bgwnVV5xRSH5nhlnuGVm-oAaskBK6ZA",
+    "note": "Bez vlivu na mzdu: podepsaná smlouva k novému PP od 21. 6. 2022 (Olomouc, doba neurčitá, 40 h týdně), mzda dle mzdového výměru.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2022-06-21",
+    "salary": 33000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + mzdový výměr (nový PP)",
+    "fileId": "1DdUogvPKv1oxTps_HOGh5UYlwqA4EpOF",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 36300,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1-mjD29vGJT4YsjnqbvccOiyR81UDBMPI",
+    "note": null
+   },
+   {
+    "from": "2023-07-01",
+    "salary": 41000,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek č. 2 + platový výměr",
+    "fileId": "1JpujJBVNOQfkMrCzWFv7LkK_rj7OPPnP",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 43100,
+    "hours": 40,
+    "position": "Project Manager pro VIP klienty",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1Um2ynlpR5B2ILpvm1GJ5s-wJIjpJCpC2",
+    "note": null
+   },
+   {
+    "from": "2024-01-29",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "15BvzVITPlynP8qOgakDvguZSC3MUa3O_",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku po dohodě s nadřízeným, bez náhrady nákladů; podepsáno 29. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 44400,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1qWO3vJRgdm6tFY03b82VfV532-smqw-G",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 45700,
+    "hours": null,
+    "position": "Project Manager pro VIP klienty",
+    "doc": "Dodatek č. 2",
+    "fileId": "15O9ibuOE8TDBij0DSnpyf-6bkd-tn6IY",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Dva samostatné pracovní poměry, mezera 1. 5. – 20. 6. 2022.",
+   "Výpověď k 31. 3. 2022 je označena jako neplatná; první PP skončil dohodou k 30. 4. 2022 (název souboru zmiňuje odstupné 1 měsíc)."
+  ]
+ },
+ {
+  "name": "Lakomá Kristýna",
+  "start": "2019-06-01",
+  "end": null,
+  "status": "DPP (hodinová odměna)",
+  "events": [
+   {
+    "from": "2019-06-01",
+    "salary": 25000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1 (doba určitá do 30. 9. 2019)",
+    "fileId": "1dGhXCqMuXq0y2pVFSt8A58a_o1nS1LQx",
+    "note": null
+   },
+   {
+    "from": "2019-10-01",
+    "salary": null,
+    "hours": null,
+    "position": "fakturační práce",
+    "doc": "DPP u Finance Accounting s.r.o. (jiný zaměstnavatel)",
+    "fileId": "129n8LR1VrVLfFt11eqU5RY6F3lt9GLE_",
+    "note": "Bez vlivu na mzdu: DPP s jinou firmou (Finance Accounting s.r.o.) od 1. 10. 2019, 5 h týdně, 320 Kč/h, podepsáno 13. 9. 2019; netýká se Českých překladů.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2019-10-01",
+    "salary": null,
+    "hours": 6,
+    "position": "Office assistant (DPP)",
+    "doc": "DPP 2019 (nepodepsaný koncept)",
+    "fileId": "14Hu8RaEzdE1a0i8ZJH83s4gnkDZgZDC9",
+    "note": "DPP, 400 Kč/h."
+   },
+   {
+    "from": "2019-10-01",
+    "salary": null,
+    "hours": 6,
+    "position": null,
+    "doc": "DPP 2019 (podepsaná)",
+    "fileId": "1EItyyui6LebXoRUR7GG6GZ_3y3fyCwb1",
+    "note": "Nalezeno jen ve složce Aptien. Zaměstnavatel České překlady s.r.o., 400 Kč/h.",
+    "kind": "dpp"
+   },
+   {
+    "from": "2020-01-01",
+    "salary": null,
+    "hours": 6,
+    "position": null,
+    "doc": "DPP 2020 na dobu neurčitou",
+    "fileId": "1hXj5Txc8ifdq7uLxCPwb9lNiI9KS3YwZ",
+    "note": "Nalezeno jen ve složce Aptien. Office manager, 400 Kč/h.",
+    "kind": "dpp"
+   },
+   {
+    "from": "2023-12-31",
+    "salary": null,
+    "hours": null,
+    "position": "Office manažer",
+    "doc": "Dohoda o zrušení DPP",
+    "fileId": "1StcwvO8WtJNIioK94rzBbYhufwHxqOAz",
+    "note": "Bez vlivu na mzdu: ukončuje DPP trvající od 1. 1. 2020 (Office manažer) ke 31. 12. 2023, podepsáno 29. 12. 2023.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-01-01",
+    "salary": null,
+    "hours": 6,
+    "position": "Office manager (DPP)",
+    "doc": "DPP 2024",
+    "fileId": "1y_fNwImsIBDi-2MbEgIR1AUMvcjhdhd3",
+    "note": "DPP, 400 Kč/h, max. 300 h ročně."
+   },
+   {
+    "from": "2024-01-02",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Informace pro zaměstnance dle § 37 ZP (DPP)",
+    "fileId": "15pAbp-WzNheXPT6OkCppntz3pTd_Z6z7",
+    "note": "Bez vlivu na mzdu: informace k DPP, pracoviště Olomouc, max. 5 h týdně, bez zkušební doby.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-01-02",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku k DPP",
+    "fileId": "1i93RMyUXWTMLiqMeRpG9jOi8yZNlXDlw",
+    "note": "Bez vlivu na mzdu: k DPP ze 2. 1. 2024 sjednává výhradně práci na dálku (z území EU), max. 5 h týdně.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-07-01",
+    "salary": null,
+    "hours": null,
+    "position": "Fakturant/ka (DPP)",
+    "doc": "Dodatek č. 1 k DPP",
+    "fileId": "15ziX0HQJPAaH_c_2jvtEp6GyU_2hNs9t",
+    "note": "DPP, 650 Kč/h, max. 10 h měsíčně."
+   }
+  ],
+  "issues": [
+   "Měsíční mzda jen 6–9/2019 (HPP na dobu určitou), potom pouze DPP s hodinovou sazbou.",
+   "Chybí podepsané DPP na roky 2020–2023; ukončovací dokument uvádí začátek DPP 1. 1. 2020.",
+   "Ve složce je i dokument jiné osoby (Lakomý Zbyněk).",
+   "Dohoda o práci na dálku a informace k DPP 2024 uvádějí max. 5 h týdně, u DPP 2024 je 6 h – ověřit.",
+   "DPP od 1. 10. 2019 v původní složce je s jinou firmou (Finance Accounting s.r.o.), ve složce Aptien jsou ale podepsané DPP s Českými překlady (2019 a 2020, 6 h týdně, 400 Kč/h) – ověřit, která platí."
+  ]
+ },
+ {
+  "name": "Ivanovská Vavrová Laura",
+  "start": "2022-07-01",
+  "end": null,
+  "status": "mateřská / rodičovská",
+  "events": [
+   {
+    "from": "2022-07-01",
+    "salary": null,
+    "hours": null,
+    "position": "project manager",
+    "doc": "Pracovní smlouva 2022",
+    "fileId": "1lhl8mJ_gwOn7cTgoISRlR9EQzxw0Nsa9",
+    "note": "Bez vlivu na mzdu: podepsaná smlouva (podpis 26. 4. 2022, nástup 1. 7. 2022, Praha, doba neurčitá, 40 h týdně), mzda dle mzdového výměru.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2022-07-01",
+    "salary": 45000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva + mzdový výměr",
+    "fileId": "18aVtFT21Bx5ReT_Lhkw75UH84gKvI8jt",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 49500,
+    "hours": null,
+    "position": "Project Manager",
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1z-ofA0F8lX8PTzb1R6f6A9rhnZO_U-jr",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 51000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1GPZLhbEYKykZPCvC4pr9-24YEfZ52JoC",
+    "note": null
+   },
+   {
+    "from": "2024-01-09",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1XWXAQR2i9qLeGklbdoA5Pv7owN7UvFWI",
+    "note": "Bez vlivu na mzdu: umožňuje práci na dálku po dohodě s nadřízeným, bez náhrady nákladů; podepsáno 9. 1. 2024.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 52000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1kYPmSqaGb-y2Nzq2aDTQCvGMUZuNVPLt",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 53600,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2 (nepodepsaný koncept)",
+    "fileId": "11-AJDZ4xbuf4OXFifFrjorw-3QC1g7qq",
+    "note": "Nalezen jen koncept .docx mimo složku zaměstnankyně, podepsaná verze chybí."
+   }
+  ],
+  "issues": [
+   "Dodatek k 1. 1. 2026 existuje jen jako nepodepsaný koncept.",
+   "Změna příjmení na Ivanovská Vavrová není zachycena v dodatku.",
+   "Doplnit termín nástupu na MD a předpokládaný konec MD/RD – žádost o PPM ani žádost o rodičovskou ve složce nejsou."
+  ]
+ },
+ {
+  "name": "Vávrová (Olexová) Kateřina",
+  "start": "2010-09-06",
+  "end": null,
+  "status": "mateřská / rodičovská",
+  "events": [
+   {
+    "from": "2010-09-06",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Pracovní smlouva 2010 (ve složce je místo ní jiný dokument)",
+    "fileId": "1D1Hm3Q-f8tZQ7p_pYYg5LJswo_ePamoi",
+    "note": "Nástupní mzda neznámá."
+   },
+   {
+    "from": "2012-01-01",
+    "salary": 22000,
+    "hours": 40,
+    "position": null,
+    "doc": "Platový výměr č. 2",
+    "fileId": "1LZf_qZXBmtBpIqDwJLvgpljxTsNYH97X",
+    "note": null
+   },
+   {
+    "from": "2013-04-01",
+    "salary": 25000,
+    "hours": null,
+    "position": null,
+    "doc": "Platový výměr č. 3",
+    "fileId": "1onecOfdmUHPZBX7twdAgGMujqTUgeohH",
+    "note": "Text uvádí od 1. 4. 2013, podepsáno 27. 3. 2012 – možná platí od 1. 4. 2012."
+   },
+   {
+    "from": "2014-05-12",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek 2014 (bez čísla)",
+    "fileId": "1f4pI72PC5zE9G1ktnu_WlzbMR4RojYij",
+    "note": "Bez vlivu na mzdu: změna adresy sídla zaměstnavatele a místa výkonu práce na Spálená 108/51, Praha 1.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2017-07-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "1ESd7QzAfXNKhMOq8g0i7LM8nlA8RSfYu",
+    "note": "Bez vlivu na mzdu: nárok na 5 týdnů dovolené ročně (podepsáno 29. 6. 2017).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2018-01-01",
+    "salary": 27000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 3",
+    "fileId": "1qdAxeARoLSDVuCX3wye9v8OlgYm8cvzD",
+    "note": null
+   },
+   {
+    "from": "2018-05-25",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 4",
+    "fileId": "1v_fK--fxHYkHymyXD1hMn7KkVL8HCi7s",
+    "note": "Bez vlivu na mzdu: nové znění čl. 5 o mlčenlivosti a GDPR.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2018-11-01",
+    "salary": 30000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 5 (2018)",
+    "fileId": "1yduN4jvy8kuVtx4M8Aap71pnoeJ7XBEv",
+    "note": null
+   },
+   {
+    "from": "2019-01-01",
+    "salary": 35000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 5 (2019, duplicitní číslo)",
+    "fileId": "10ia36eQxe2yblrO7rmxUoMH3gRSKTt_y",
+    "note": null
+   },
+   {
+    "from": "2022-01-01",
+    "salary": 45000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek 2022 + platový výměr",
+    "fileId": "1Ts2eNV6Wjb-IA4owzRLlipUBaSe0RQPm",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 49500,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek 2023 + platový výměr",
+    "fileId": "1zGC276KOq7EmP6bDrgE4xNDWZCd8umTa",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 54500,
+    "hours": 40,
+    "position": "Head of Project Management",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1OEh8HaY7wgui31KEtImuIUOFA8VIJsXT",
+    "note": null
+   },
+   {
+    "from": "2024-01-08",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "16kinchNcFlsAv14AjwDFGc8X9uneT_aW",
+    "note": "Bez vlivu na mzdu: sjednána práce na dálku na dobu neurčitou bez náhrady nákladů, pracovní doba dle smlouvy.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 56100,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1tJ4bSG9OhZeAe89vW-CwwFJTa5Tx9Pol",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   }
+  ],
+  "issues": [
+   "Soubor „Pracovní smlouva 2010“ obsahuje záznam BOZP jiné osoby; nástupní smlouva a výměr č. 1 chybí.",
+   "Mezi 2013 a 1/2018 chybí mzdové dokumenty.",
+   "Dodatek č. 5 existuje dvakrát.",
+   "Nenalezen dodatek k 1. 1. 2026, který mají ostatní.",
+   "Doplnit termín nástupu na MD a předpokládaný konec MD/RD – žádost o PPM ani žádost o rodičovskou ve složce nejsou (rodný list dítěte nahrán 3/2026)."
+  ]
+ },
+ {
+  "name": "Utíkal Lukáš",
+  "start": "2008-02-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2008-02-01",
+    "salary": null,
+    "hours": null,
+    "position": "manager",
+    "doc": "Pracovní smlouva 2008 + Dodatek č. 1",
+    "fileId": "1IIgvMYJog7ldL3HOWLcS6d9utc2SIg9t",
+    "note": "Bez vlivu na mzdu: nástupní smlouva na dobu neurčitou na pozici manager, mzda odkazuje na platový výměr; Dodatek č. 1 jen souhlas se zpracováním rodného čísla.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2008-02-01",
+    "salary": 20000,
+    "hours": 40,
+    "position": "Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1",
+    "fileId": "1lTFjGGX1Iz8iNy8ys-9UiUlT5rzTqUI5",
+    "note": null
+   },
+   {
+    "from": "2014-05-12",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "14XeKEXp8JhSz3z5Rj_zFhUJwZ6MjaJLr",
+    "note": "Bez vlivu na mzdu: změna sídla zaměstnavatele, bydliště a místa výkonu práce na olomouckou pobočku.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2015-01-01",
+    "salary": 60000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 3",
+    "fileId": "1C2YHH9k8lrUAPXVrk6f654FHYG8Xx6VE",
+    "note": null
+   },
+   {
+    "from": "2017-07-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 4",
+    "fileId": "1X-9c-eTBelIR3UpCXPIjtwOd-7wFIUho",
+    "note": "Bez vlivu na mzdu: nárok na 5 týdnů dovolené ročně.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2018-01-01",
+    "salary": 80000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 5",
+    "fileId": "11dlgjyp8-cnol0Dz35saqrH5c9zeo7P7",
+    "note": null
+   },
+   {
+    "from": "2018-05-25",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 6",
+    "fileId": "1NfmroB_2TWPhClc7mKZ-GbCJ6_MZoJmh",
+    "note": "Bez vlivu na mzdu: nové znění čl. 5 o mlčenlivosti a GDPR.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2022-01-01",
+    "salary": 110000,
+    "hours": 40,
+    "position": null,
+    "doc": "Mzdový výměr",
+    "fileId": "1H6hvJUBA8uyancgsamr48s3EFDG7Ji5t",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 115500,
+    "hours": null,
+    "position": "Director",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1JWx62G7z5qxBHDvf6n_mrNeTxXBtQZHZ",
+    "note": "Smlouva neuvádí pracovní dobu."
+   },
+   {
+    "from": "2024-01-29",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1nDMzMfPCx6ruRf8XfMLfAxtOs9291qSa",
+    "note": "Bez vlivu na mzdu: sjednána práce na dálku na dobu neurčitou bez náhrady nákladů, pracovní doba dle smlouvy.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 119000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1dcFGLwxl_BvlwWDK4ynPjMPSqQZZQpOj",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 122600,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "10JkNM01ZG8LppWgyvfUh1KO5Wljnj1DU",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Mezi 2008 a 2015 a mezi 2018 a 2022 chybí mzdové dokumenty.",
+   "Smlouva z roku 2024 neobsahuje článek o pracovní době."
+  ]
+ },
+ {
+  "name": "Baláček Václav",
+  "start": "2008-02-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2008-02-01",
+    "salary": 20000,
+    "hours": 40,
+    "position": "Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1",
+    "fileId": "1beKbO-uTchLrw4LNx4wAh-JwK81Jj1kk",
+    "note": null
+   },
+   {
+    "from": "2008-02-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1rcmdC87Nx7hQ9gl9Hbitb2asqWnSM_NE",
+    "note": "Bez vlivu na mzdu: souhlas se zpracováním rodného čísla.",
+    "added": true
+   },
+   {
+    "from": "2014-05-12",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "1ZDP0QXWjxP5OFesbZ3_zBdSzSzK9rnJC",
+    "note": "Bez vlivu na mzdu: změna sídla zaměstnavatele a místa výkonu práce (pobočka Olomouc).",
+    "added": true
+   },
+   {
+    "from": "2017-07-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 4",
+    "fileId": "1FRbIoV19bjHjVRD6rQ9-7PB-QVKE759D",
+    "note": "Bez vlivu na mzdu: 5 týdnů dovolené ročně.",
+    "added": true
+   },
+   {
+    "from": "2018-05-25",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 5",
+    "fileId": "19gNq_u_cINnksjRogo3pWv0o7jiY2GA_",
+    "note": "Bez vlivu na mzdu: nové znění mlčenlivosti (GDPR).",
+    "added": true
+   },
+   {
+    "from": "2019-01-01",
+    "salary": 60000,
+    "hours": 20,
+    "position": null,
+    "doc": "Dodatek č. 6",
+    "fileId": "11QyGDsl2vC-Wu5I6F5quFrTTvsHgt1dl",
+    "note": "Úvazek 4 h denně."
+   },
+   {
+    "from": "2021-11-01",
+    "salary": 110000,
+    "hours": 40,
+    "position": null,
+    "doc": "Mzdový výměr",
+    "fileId": "100-QfX6VYW8fVxn1baYl5IZbGff2xzpA",
+    "note": null
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 115500,
+    "hours": 40,
+    "position": "Director",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1WsVFzoQ2iYXK-FR3lMjfe63INC3KTMtM",
+    "note": null
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 119000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1GpWc_5SAm-pzLojq-gDQuqdGkmneq-kh",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 122600,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "182LvmK2rEcoGK_ydedrpQncuhjvZqBk5",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Chybí Dodatek č. 3 k původní smlouvě.",
+   "Mzda mezi 2008 a 2019 neznámá: dodatky 1, 2, 4 a 5 mzdu nemění a mzdový výměr z tohoto období chybí."
+  ]
+ },
+ {
+  "name": "Bělešová Alena",
+  "start": "2008-02-01",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2008-02-01",
+    "salary": null,
+    "hours": null,
+    "position": "Projektový manager",
+    "doc": "Pracovní smlouva",
+    "fileId": "1hrXaXNt-qEE8RPoYQZ--i7P-ULqlhOyH",
+    "note": "Smlouva odkazuje na platový výměr, který chybí."
+   },
+   {
+    "from": "2008-02-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1ulQ2lrXjAUk6ASQONOmGXC_wRiAoMG1P",
+    "note": "Bez vlivu na mzdu: pouze souhlas se zpracováním rodného čísla.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2015-10-19",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Výpověď + zpětvzetí výpovědi",
+    "fileId": "1aiD98ZvD6PMLgM8S0e1QGpc7y3bXs_2G",
+    "note": "Nalezeno jen ve složce Aptien. Výpověď z organizačních důvodů k 31. 12. 2015 vzata zpět 2. 11. 2015 se souhlasem zaměstnankyně, PP pokračoval.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2016-01-01",
+    "salary": 22000,
+    "hours": 40,
+    "position": "Account manager pro Moravu a Slezsko",
+    "doc": "Dodatek č. 2",
+    "fileId": "1W-yepwX43QY7LVRdOu_kdrxhvbSpQbeA",
+    "note": "Navíc záloha na prémie 5 000 Kč měsíčně."
+   },
+   {
+    "from": "2017-01-01",
+    "salary": 31000,
+    "hours": 40,
+    "position": "Head of Sales",
+    "doc": "Dodatek č. 3",
+    "fileId": "16Nmjzt4hy2GczVit7by-yePDwlHD1vVW",
+    "note": null
+   },
+   {
+    "from": "2017-07-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 4",
+    "fileId": "1xIoF0c55edIGHsEUsOeEkIrdwBpOKoVM",
+    "note": "Bez vlivu na mzdu: nárok na 5 týdnů dovolené ročně.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2017-07-11",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Žádost o PPM (1. dítě)",
+    "fileId": "1nfgbRdJ04S5yLFFJ4hVv4VPvTygscZg_",
+    "note": "Bez vlivu na mzdu: žádost o peněžitou pomoc v mateřství podaná 11. 7. 2017, začátek první mateřské.",
+    "kind": "leave",
+    "added": true
+   },
+   {
+    "from": "2018-05-25",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 5",
+    "fileId": "1N4XjIadrPM9xMEUXlTx_ubY1Ua78ImHc",
+    "note": "Bez vlivu na mzdu: nové znění čl. 5 o mlčenlivosti a GDPR.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2020-06-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Žádost o PPM (2. dítě)",
+    "fileId": "1CHMEhQRmtxmDdqQGkgPNzPvxt4w89lPD",
+    "note": "Bez vlivu na mzdu: žádost o peněžitou pomoc v mateřství s nástupem cca 1. 6. 2020 (druhá mateřská).",
+    "kind": "leave",
+    "added": true
+   },
+   {
+    "from": "2023-01-02",
+    "salary": null,
+    "hours": null,
+    "position": "Marketing project management (DPP)",
+    "doc": "DPP na dobu neurčitou",
+    "fileId": "10mDLgN_rqNgrpn6IFD5CQzvTWvyGdwBS",
+    "note": "Bez vlivu na mzdu: souběžná DPP za 400 Kč/h, max. 25 h měsíčně, během rodičovské.",
+    "kind": "dpp",
+    "added": true
+   },
+   {
+    "from": "2023-08-31",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Ukončení DPP",
+    "fileId": "1KB7eIhA0qKVWIYIih8pgX0bzTwAEp9qx",
+    "note": "Bez vlivu na mzdu: DPP ukončena dohodou k 31. 8. 2023 (podepsáno 18. 8. 2023; nepodepsaný koncept je v souboru DPP_Bělešová_na_dobu_neurčitou ukončení.docx, 10l_QBPaLU14OrBX8ldX4muhwo76KygwE).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2023-09-01",
+    "salary": 45000,
+    "hours": 30,
+    "position": "Head of Marketing",
+    "doc": "Dodatek č. 6 + platový výměr",
+    "fileId": "1obRdKLMgcxLq80zogzDViAvqaDI21G8m",
+    "note": "Návrat z rodičovské."
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 45000,
+    "hours": 30,
+    "position": "Head of Marketing",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1sogyL6ruNDxdOBNYdjd9sXALFrdfJmqZ",
+    "note": null
+   },
+   {
+    "from": "2024-01-30",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o práci na dálku",
+    "fileId": "1fSzRU_UWSvCxD6Y2SyfQLR6o-Z1P4BNv",
+    "note": "Bez vlivu na mzdu: sjednána práce na dálku na dobu neurčitou bez náhrady nákladů, pracovní doba dle smlouvy.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 46400,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1fns8eGGK27hZOjnt3qd9jZeDGY9Bcrej",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 47800,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "1VUPFndiCZ6WD0CssQk4z4X_w6R5ohqcA",
+    "note": "Není zřejmé, zda je kopie podepsaná."
+   }
+  ],
+  "issues": [
+   "Chybí nástupní platový výměr z roku 2008; mezi 2008 a 2016 chybí mzdové dokumenty.",
+   "Mateřská od 7/2017 (žádost o PPM 11. 7. 2017), druhá od cca 1. 6. 2020; v tabulce vedeno jako MD/RD až do návratu 1. 9. 2023 – není jisté, zda se mezi dětmi vrátila do práce.",
+   "Během rodičovské DPP 400 Kč/h (1–8/2023), není součástí mzdy."
+  ]
+ },
+ {
+  "name": "Grunclová (Vorlová) Michaela",
+  "start": "2012-10-10",
+  "end": null,
+  "status": null,
+  "events": [
+   {
+    "from": "2012-10-10",
+    "salary": 20000,
+    "hours": 40,
+    "position": "Project manager",
+    "doc": "Pracovní smlouva + platový výměr",
+    "fileId": "11rglXVLbSELfKFCAjnoIjg62l2OipIRV",
+    "note": "Navíc prémie obvykle kolem 5 000 Kč."
+   },
+   {
+    "from": "2014-05-12",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek 2014 (bez čísla)",
+    "fileId": "1fGLqLkGk8ukw3FN4_ej0b6QpGawR-yYi",
+    "note": "Bez vlivu na mzdu: změna adresy sídla zaměstnavatele a místa výkonu práce na Spálená 108/51, Praha 1.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2015-01-01",
+    "salary": 23000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "10JwUZlXFKLVvktnqKtZfp7OqAqd8Dool",
+    "note": null
+   },
+   {
+    "from": "2016-10-01",
+    "salary": 26000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 3",
+    "fileId": "1X_xOgD_76uKTlGuUxHmzKihm606rGBlZ",
+    "note": null
+   },
+   {
+    "from": "2017-07-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 4",
+    "fileId": "1qk8t2bbLUHPdiwJNcJgqVzAj03khstn7",
+    "note": "Bez vlivu na mzdu: nárok na 5 týdnů dovolené ročně.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2018-01-01",
+    "salary": 28000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 5",
+    "fileId": "1ikbQz9wuDLHJwn6vhVd4gadTc7rUmE7I",
+    "note": null
+   },
+   {
+    "from": "2018-05-25",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 6",
+    "fileId": "1hFwhYS5kMdFO1f2PZ8TY61HI5Tm8q7CA",
+    "note": "Bez vlivu na mzdu: nové znění čl. 5 o mlčenlivosti a GDPR.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2018-07-01",
+    "salary": 30000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 7",
+    "fileId": "1wpD6KTlNn_eXDc0UA0ck6T6GX1wd9Cml",
+    "note": null
+   },
+   {
+    "from": "2018-11-01",
+    "salary": 32000,
+    "hours": null,
+    "position": "Senior Project Manager",
+    "doc": "Dodatek č. 8",
+    "fileId": "1VaazE3b5o89DVZWmHQRMU4jxHy8GiTSA",
+    "note": null
+   },
+   {
+    "from": "2019-01-01",
+    "salary": 37000,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 9",
+    "fileId": "15AAVk_pLlS2HJC9MfKV3jwcmJygs6KlY",
+    "note": null
+   },
+   {
+    "from": "2019-05-31",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Žádost o PPM",
+    "fileId": "1F1c1NeK493dWnhLes4CNYje3SlO7QvQl",
+    "note": "Bez vlivu na mzdu: nástup na peněžitou pomoc v mateřství 31. 5. 2019, poslední odpracovaný den 30. 5. 2019.",
+    "kind": "leave",
+    "added": true
+   },
+   {
+    "from": "2022-05-04",
+    "salary": null,
+    "hours": null,
+    "position": "project management support",
+    "doc": "Pracovní smlouva 2022 + mzdový výměr (NEPLATNÁ)",
+    "fileId": "1kD7tEiuNi1Kvju7r5XqiwCQpedKX2kQR",
+    "note": "Bez vlivu na mzdu: neplatná smlouva nahrazená Dodatkem č. 10, se stejnými podmínkami (17 000 Kč, 15 h týdně od 4. 5. 2022).",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2022-05-04",
+    "salary": 17000,
+    "hours": 15,
+    "position": "Project manager support",
+    "doc": "Dodatek č. 10 + mzdový výměr",
+    "fileId": "1eT9Y6c4ThuclqCtJkbJwcjxQ_FREeGmM",
+    "note": "Návrat z rodičovské."
+   },
+   {
+    "from": "2022-09-01",
+    "salary": 45000,
+    "hours": 40,
+    "position": null,
+    "doc": "Dodatek č. 11 + mzdový výměr",
+    "fileId": "1RE26CBhag63SjyAHhs-tswAk7W0XPWVG",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": 49500,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 12 + mzdový výměr",
+    "fileId": "1fyPprGK3me1AbBt9nuhG01fUiKlO-hgA",
+    "note": null
+   },
+   {
+    "from": "2023-01-01",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek 2023 + platový výměr (NEPLATNÝ)",
+    "fileId": "1z9oTX1GSfIvprogeH5ZeL37cNyKTvxg0",
+    "note": "Bez vlivu na mzdu: neplatný dodatek nahrazený Dodatkem č. 12, se stejnou mzdou 49 500 Kč od 1. 1. 2023.",
+    "kind": "info",
+    "added": true
+   },
+   {
+    "from": "2024-01-01",
+    "salary": 52000,
+    "hours": 40,
+    "position": "Project Manager",
+    "doc": "Pracovní smlouva 2024 (nová)",
+    "fileId": "1Q_N6lOR46cx9vJKfpVeumA3qrRRtWX71",
+    "note": "Uloženo mimo složku zaměstnankyně."
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 53600,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1As9MG5gXlUkWCYz33qfm_T5bbbIVWvBj",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-01-01",
+    "salary": 55200,
+    "hours": null,
+    "position": null,
+    "doc": "Dodatek č. 2",
+    "fileId": "1dM1EMOVxAoV1s-LGm2bCNH1SRMsHDYGr",
+    "note": null
+   }
+  ],
+  "issues": [
+   "Název složky uvádí „mateřská“, ale podle dokumentů je od 5/2022 zpět v práci.",
+   "Smlouva 2024 a Dodatek č. 1 nejsou ve složce zaměstnankyně."
+  ]
+ },
+ {
+  "name": "Lanská (Kutová) Jaroslava",
+  "start": "2019-12-01",
+  "end": "2026-06-30",
+  "status": "ukončeno dohodou",
+  "events": [
+   {
+    "from": "2019-12-01",
+    "salary": 33000,
+    "hours": 40,
+    "position": "Vendor Manager",
+    "doc": "Pracovní smlouva + platový výměr č. 1",
+    "fileId": "1Km3rZeueyaajq8ssiPmPxp5frz2Db7GE",
+    "note": null
+   },
+   {
+    "from": "2022-03-16",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Mateřská",
+    "fileId": null,
+    "note": "Mateřská od 16. 3. 2022, druhé dítě od 8. 10. 2023."
+   },
+   {
+    "from": "2023-10-08",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Příloha k žádosti o PPM (2. dítě)",
+    "fileId": "13JzzogTTdp5hwmjdmaw8xwNtSJ_jyqvh",
+    "note": "Bez vlivu na mzdu: nástup na druhou mateřskou od 8. 10. 2023 (první dítě narozeno 16. 5. 2022), přílohy vystaveny 23.–26. 10. 2023.",
+    "kind": "leave",
+    "added": true
+   },
+   {
+    "from": "2026-06-30",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Dohoda o rozvázání PP",
+    "fileId": "1R-hm0y0mTe9wZk8rgPxKC-fkcEIeXV-W",
+    "note": "Konec pracovního poměru."
+   }
+  ],
+  "issues": [
+   "Smlouva a ukončení jsou v jiné složce „Lanská (Kutová) Jaroslava - 1.12.2019 - 30.6.2026“.",
+   "Mzda se možná zvýšila: přílohy k žádosti o PPM uvádějí vyměřovací základ 36 000–42 135 Kč (3–12/2021) a 38 000 Kč (1–2/2022), dodatek ani výměr o zvýšení ve složce není.",
+   "Od 3/2022 mateřská a rodičovská, druhá mateřská od 8. 10. 2023."
+  ]
+ },
+ {
+  "name": "Samsonová Hana",
+  "start": "2024-04-01",
+  "end": "2026-02-13",
+  "status": "ukončeno",
+  "events": [
+   {
+    "from": "2024-04-01",
+    "salary": 28000,
+    "hours": 28,
+    "position": "Sales Manager",
+    "doc": "Pracovní smlouva",
+    "fileId": "1uu8YdUeENPltyN-l3Vy-bLQO22KbPdW5",
+    "note": "Mzda sjednána „po dobu zkušební doby“ (3 měsíce). Do 1. 11. 2023 spolupráce na IČO (rámcová dohoda o spolupráci)."
+   },
+   {
+    "from": "2025-01-01",
+    "salary": 33000,
+    "hours": 32,
+    "position": null,
+    "doc": "Dodatek č. 1",
+    "fileId": "1EoVDA085qu5cG8_biqU-jr-pt9E4cKvJ",
+    "note": "Uloženo ve sdílené složce dodatků 2025."
+   },
+   {
+    "from": "2026-02-13",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Konec pracovního poměru",
+    "fileId": null,
+    "kind": "end",
+    "note": "Datum jen z názvu složky, dokument o ukončení nenalezen."
+   }
+  ],
+  "issues": [
+   "Mzda ve smlouvě je jen pro zkušební dobu; mzda od 7/2024 do 12/2024 není doložena.",
+   "Konec PP 13. 2. 2026 je jen v názvu složky, dokument o ukončení chybí."
+  ]
+ }
+]
