@@ -370,10 +370,20 @@
     "note": "Bez vlivu na mzdu: mateřská končí 26. 4. 2024, poté rodičovská dovolená (rodičovský příspěvek od 1. 5. 2024) pravděpodobně do září 2026; podepsáno 11. 4. 2024.",
     "kind": "info",
     "added": true
+   },
+   {
+    "from": "2029-08-31",
+    "salary": null,
+    "hours": null,
+    "position": null,
+    "doc": "Doplněno ručně",
+    "fileId": null,
+    "note": "doplněno ručně, bez dokumentu: na rodičovské s druhým dítětem do 08/2029",
+    "kind": "info",
+    "added": true
    }
   ],
   "issues": [
-   "Mateřská skončila 26. 4. 2024, rodičovská pravděpodobně do 9/2026; v 8/2026 nahrán rodný list druhého dítěte.",
    "Chybí dokument s přesným začátkem mateřské a s návratem do práce."
   ]
  },
