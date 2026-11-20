@@ -1,7 +1,7 @@
 # Zadání pro časovanou úlohu (cloud)
 
 Rutina běží **1. den v měsíci v 7:00** (cron `0 7 1 * *`, časové pásmo Europe/Prague).
-Konektory: **Google Drive** (čtení) a **Slack** (jen soukromá zpráva Haně při chybě).
+Konektory: **Google Drive** (čtení) a **Slack** (jen soukromá zpráva Haně – hlášení po každém běhu, nebo chyba).
 Proměnné prostředí nejsou potřeba.
 
 Data se commitují na větev `claude/mzdy-data` (cloud nesmí pushovat do `main`).
@@ -58,7 +58,7 @@ DODATKY_2025 = 1W9uOf6FTOFcdEFFOBsmonwpKMo6J9TDE
    Do kolekce checks nic nezapisuj. Existující texty bodů neměň (změna textu = nový bod).
 
 5. Pokud se v krocích 3–4 nic nezměnilo: jen aktualizuj data/state.json (last_run = NOW),
-   commitni (krok 7) a v závěru napiš "Bez změn." Artefakt nepublikuj.
+   commitni (krok 7), pošli hlášení podle kroku 8 ("bez změn") a skonči. Artefakt nepublikuj.
 
 6. Sestav a publikuj tabulku:
    python scripts/build.py out/vyvoj-mezd.html
@@ -75,12 +75,21 @@ DODATKY_2025 = 1W9uOf6FTOFcdEFFOBsmonwpKMo6J9TDE
    git add data && git commit -m "Měsíční aktualizace <YYYY-MM>" && git push -u origin claude/mzdy-data
    Nic jiného do repozitáře nepřidávej.
 
-8. Na konci napiš krátké shrnutí česky: které dokumenty přibyly (zaměstnanec, dokument, mzda),
-   které body k ověření se vyřešily nebo přibyly, a zda se artefakt publikoval.
+8. Hlášení o úspěchu: až projdou kroky 6 a 7 (nebo krok 5), pošli přes slack_send_message
+   soukromou zprávu na Slack ID U0456SGLEUT. Piš česky, stručně, bez rodných čísel a jiných
+   citlivých údajů (jména a mzdy jsou v pořádku – zpráva jde jen Haně):
+   "Vývoj mezd – aktualizace <YYYY-MM> proběhla v pořádku ✅
+   Nové dokumenty: <seznam: zaměstnanec – dokument – od kdy – mzda / bez vlivu na mzdu>, nebo „žádné“
+   Doplněno z K ověření: <seznam: zaměstnanec – co se zapsalo>, nebo „nic“
+   Nové body k ověření: <počet a krátký seznam>, nebo „žádné“
+   Vyřešené body: <počet>
+   Tabulka: https://claude.ai/artifact/64W1HEPC1wCGVqer5Dy1qg (publikováno / beze změny)"
+   Stejné shrnutí napiš i jako závěrečnou odpověď běhu.
 
 CHYBY: pokud selže Drive, publikace artefaktu, čtení checks nebo push na GitHub, nic neobcházej.
 Pošli přes slack_send_message soukromou zprávu na Slack ID U0456SGLEUT:
 "Vývoj mezd: měsíční aktualizace <YYYY-MM> selhala v kroku <číslo> (<přesná chyba>)."
 Pokud selže až push (artefakt už je publikovaný), uveď to ve zprávě – data příště zpracuj znovu,
-protože last_run se neuložil. Jinou zprávu do Slacku neposílej.
+protože last_run se neuložil. Při chybě pošli jen tuto chybovou zprávu (ne hlášení z kroku 8).
+Do kanálů ani jiným lidem do Slacku nic neposílej.
 ```
